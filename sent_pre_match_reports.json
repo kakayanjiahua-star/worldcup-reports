@@ -1,0 +1,36 @@
+{
+  "reports": [
+    {
+      "matchId": "400021477",
+      "match": "BEL-IRN",
+      "kickoffBjt": "2026-06-22 03:00",
+      "reportPath": "四场世界杯赛前预测包.html",
+      "pushedAtBjt": "2026-06-21 22:08",
+      "mode": "manual-four-match-pack"
+    },
+    {
+      "matchId": "400021480",
+      "match": "NZL-EGY",
+      "kickoffBjt": "2026-06-22 09:00",
+      "reportPath": "四场世界杯赛前预测包.html",
+      "pushedAtBjt": "2026-06-21 22:08",
+      "mode": "manual-four-match-pack"
+    },
+    {
+      "matchId": "400021483",
+      "match": "ESP-KSA",
+      "kickoffBjt": "2026-06-22 00:00",
+      "reportPath": "四场世界杯赛前预测包.html",
+      "pushedAtBjt": "2026-06-21 22:08",
+      "mode": "manual-four-match-pack"
+    },
+    {
+      "matchId": "400021487",
+      "match": "URU-CPV",
+      "kickoffBjt": "2026-06-22 06:00",
+      "reportPath": "四场世界杯赛前预测包.html",
+      "pushedAtBjt": "2026-06-21 22:08",
+      "mode": "manual-four-match-pack"
+    }
+  ]
+}

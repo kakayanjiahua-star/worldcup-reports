@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>荷兰 vs 瑞典 | 2026 世界杯预测竖版报告</title>
+  <style>
+    :root {
+      --orange: #ff7a00;
+      --orange-dark: #d85300;
+      --blue: #1157d9;
+      --yellow: #ffd939;
+      --ink: #111827;
+      --muted: #64748b;
+      --paper: #fff8ed;
+      --navy: #10213f;
+      --aqua: #27d6c5;
+      --red: #ef4444;
+      --green: #22c55e;
+      --line: rgba(17, 24, 39, 0.14);
+      --shadow: 0 22px 70px rgba(15, 23, 42, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-snap-type: y mandatory; background: #0c1222; }
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(255, 122, 0, 0.45), transparent 28%),
+        radial-gradient(circle at 88% 14%, rgba(17, 87, 217, 0.4), transparent 28%),
+        linear-gradient(135deg, #0b1220, #172554 55%, #111827);
+    }
+
+    .deck {
+      width: min(100%, 540px);
+      margin: 0 auto;
+      background: #0c1222;
+    }
+
+    .slide {
+      position: relative;
+      min-height: 100svh;
+      padding: 28px 24px 30px;
+      scroll-snap-align: start;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .slide.light {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,248,237,0.96)),
+        repeating-linear-gradient(135deg, rgba(255,122,0,0.08) 0 8px, rgba(17,87,217,0.08) 8px 16px);
+    }
+
+    .slide.dark {
+      color: #fff;
+      background:
+        linear-gradient(165deg, rgba(12,18,34,0.96), rgba(16,33,63,0.96)),
+        linear-gradient(45deg, rgba(255,122,0,0.2), transparent 40%);
+    }
+
+    .slide.orange {
+      color: #fff;
+      background:
+        linear-gradient(160deg, #ff7a00 0%, #f97316 38%, #10213f 100%);
+    }
+
+    .slide.blue {
+      color: #fff;
+      background:
+        linear-gradient(160deg, #1157d9 0%, #183b8f 52%, #07111f 100%);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      width: max-content;
+      gap: 8px;
+      padding: 7px 11px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: 54px;
+      line-height: 0.96;
+      letter-spacing: 0;
+      max-width: 9ch;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    h3 {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .muted { color: var(--muted); }
+    .dark .muted, .blue .muted, .orange .muted { color: rgba(255,255,255,0.74); }
+
+    .teams {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .crest {
+      min-height: 112px;
+      border: 2px solid rgba(255,255,255,0.36);
+      background: rgba(255,255,255,0.12);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .crest .code { font-size: 34px; font-weight: 900; }
+    .crest .name { font-size: 13px; font-weight: 800; opacity: 0.86; }
+    .crest.ned { background: linear-gradient(145deg, #ff7a00, #fff 48%, #1d4ed8); color: #111827; }
+    .crest.swe { background: linear-gradient(145deg, #1157d9 0 55%, #ffd939 55%); color: #fff; }
+    .vs {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 950;
+      color: #111827;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .score-call {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      align-items: stretch;
+      margin-top: auto;
+    }
+    .score-box {
+      padding: 15px 12px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.92);
+      color: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 105px;
+    }
+    .score-box strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .score-box span { font-size: 12px; color: #475569; font-weight: 800; }
+    .score-box.primary {
+      background: #111827;
+      color: #fff;
+      outline: 4px solid var(--yellow);
+    }
+    .score-box.primary span { color: rgba(255,255,255,0.78); }
+
+    .page-no {
+      position: absolute;
+      right: 22px;
+      bottom: 18px;
+      font-size: 12px;
+      font-weight: 900;
+      opacity: 0.45;
+    }
+
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+      padding: 14px;
+      border-radius: 8px;
+      box-shadow: 0 12px 38px rgba(15, 23, 42, 0.08);
+    }
+    .dark .panel, .blue .panel, .orange .panel {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.22);
+    }
+
+    .big-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .big-stat b { font-size: 30px; line-height: 1; }
+    .big-stat small { font-size: 12px; font-weight: 800; color: var(--muted); }
+    .dark .big-stat small, .blue .big-stat small, .orange .big-stat small { color: rgba(255,255,255,0.68); }
+
+    .source-list { display: grid; gap: 10px; }
+    .source {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 11px;
+      align-items: center;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.82);
+      padding: 11px;
+      border-radius: 8px;
+    }
+    .source .mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 950;
+      background: var(--navy);
+    }
+    .source:nth-child(2) .mark { background: var(--orange); }
+    .source:nth-child(3) .mark { background: var(--blue); }
+    .source:nth-child(4) .mark { background: #16a34a; }
+    .source b { font-size: 14px; }
+    .source small { display: block; color: #64748b; line-height: 1.35; margin-top: 2px; }
+
+    .bar-chart { display: grid; gap: 14px; margin-top: 4px; }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 74px 1fr 48px;
+      gap: 10px;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .track {
+      height: 18px;
+      background: rgba(15,23,42,0.12);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(15,23,42,0.12);
+    }
+    .fill { height: 100%; border-radius: 999px; }
+    .fill.ned { width: 47.7%; background: linear-gradient(90deg, #ff7a00, #ffb84d); }
+    .fill.draw { width: 25.8%; background: linear-gradient(90deg, #64748b, #cbd5e1); }
+    .fill.swe { width: 26.5%; background: linear-gradient(90deg, #1157d9, #ffd939); }
+
+    .compare-bars {
+      display: grid;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .compare {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 9px;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .stack {
+      display: grid;
+      grid-template-columns: var(--a) var(--b) var(--c);
+      height: 24px;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.32);
+    }
+    .stack div:nth-child(1) { background: var(--orange); }
+    .stack div:nth-child(2) { background: #94a3b8; }
+    .stack div:nth-child(3) { background: var(--blue); }
+
+    .legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      font-weight: 800;
+      color: inherit;
+    }
+    .legend i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      vertical-align: -1px;
+    }
+
+    .pitch {
+      width: 100%;
+      aspect-ratio: 0.72;
+      border-radius: 8px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0)),
+        #16703b;
+      background-size: 33.33% 100%, 100% 100%, 100% 100%;
+      border: 3px solid rgba(255,255,255,0.9);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin-top: 2px;
+    }
+    .pitch:before {
+      content: "";
+      position: absolute;
+      inset: 47% 0 auto;
+      height: 3px;
+      background: rgba(255,255,255,0.86);
+    }
+    .pitch:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 92px;
+      height: 92px;
+      border: 3px solid rgba(255,255,255,0.86);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .player {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      width: 66px;
+      min-height: 26px;
+      padding: 3px 6px;
+      border-radius: 999px;
+      font-size: 10px;
+      line-height: 1;
+      font-weight: 900;
+      text-align: center;
+      box-shadow: 0 5px 16px rgba(0,0,0,0.28);
+      z-index: 2;
+    }
+    .player.ned { background: #ff7a00; color: #111827; border: 2px solid #fff; }
+    .player.swe { background: #1157d9; color: #fff; border: 2px solid #ffd939; }
+    .arrow {
+      position: absolute;
+      height: 4px;
+      background: var(--yellow);
+      transform-origin: left center;
+      z-index: 1;
+      box-shadow: 0 0 12px rgba(255,217,57,0.85);
+    }
+    .arrow:after {
+      content: "";
+      position: absolute;
+      right: -2px;
+      top: -5px;
+      border-left: 11px solid var(--yellow);
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .score-card {
+      position: relative;
+      min-height: 88px;
+      padding: 13px;
+      color: #fff;
+      background: #111827;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .score-card b { display: block; font-size: 30px; line-height: 1; }
+    .score-card small { position: relative; z-index: 1; font-weight: 900; opacity: 0.78; }
+    .score-card .bubble {
+      position: absolute;
+      right: -20px;
+      bottom: -24px;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      background: var(--color);
+      opacity: 0.88;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 9px;
+      margin-top: 4px;
+    }
+    .phase {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 10px;
+      align-items: stretch;
+    }
+    .phase time {
+      padding: 9px 7px;
+      background: #111827;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 950;
+      text-align: center;
+      font-size: 12px;
+    }
+    .phase div {
+      padding: 10px 11px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .risk-matrix {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .risk {
+      min-height: 124px;
+      padding: 13px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.1);
+    }
+    .risk b { display: block; font-size: 16px; margin-bottom: 8px; }
+    .risk p { font-size: 13px; color: rgba(255,255,255,0.78); }
+    .risk.hot { background: linear-gradient(145deg, rgba(239,68,68,0.82), rgba(17,24,39,0.35)); }
+    .risk.mid { background: linear-gradient(145deg, rgba(255,122,0,0.78), rgba(17,24,39,0.35)); }
+    .risk.cool { background: linear-gradient(145deg, rgba(39,214,197,0.7), rgba(17,24,39,0.35)); }
+
+    .verdict {
+      margin-top: auto;
+      padding: 18px;
+      color: #111827;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .verdict .final-score {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 9px;
+    }
+    .verdict strong { font-size: 44px; line-height: 1; }
+    .verdict span {
+      padding: 7px 9px;
+      color: #111827;
+      background: var(--yellow);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .mini-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .mini-table th, .mini-table td {
+      padding: 10px 9px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+    .mini-table th {
+      color: #fff;
+      background: var(--navy);
+      font-size: 12px;
+    }
+    .mini-table tr:nth-child(even) td { background: rgba(255,255,255,0.58); }
+    .mini-table tr:nth-child(odd) td { background: rgba(255,255,255,0.82); }
+
+    a { color: inherit; }
+
+    /* FIFA-inspired refinement: calmer stage background, clearer match cards, denser data rhythm. */
+    :root {
+      --wc-bg: #071a3a;
+      --wc-bg-2: #0b2a66;
+      --wc-card: #ffffff;
+      --wc-soft: #f3f7fb;
+      --wc-line: #d9e2ef;
+      --wc-text: #071a3a;
+      --wc-muted: #637083;
+      --wc-teal: #08d4c7;
+      --wc-magenta: #c21771;
+      --wc-gold: #ffd84d;
+      --wc-orange: #ff7a1a;
+    }
+
+    body {
+      color: var(--wc-text);
+      background:
+        linear-gradient(180deg, rgba(7, 26, 58, 0.94), rgba(7, 26, 58, 1)),
+        linear-gradient(135deg, var(--wc-bg), var(--wc-bg-2));
+    }
+
+    .deck {
+      background: #071a3a;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
+    }
+
+    .slide {
+      padding: 30px 24px 34px;
+      gap: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .slide.light {
+      background:
+        linear-gradient(180deg, #f7fbff 0%, #eef5fb 100%);
+    }
+
+    .slide.dark,
+    .slide.blue,
+    .slide.orange {
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(7,26,58,0.96), rgba(8,42,102,0.98)),
+        linear-gradient(135deg, rgba(8,212,199,0.18), rgba(194,23,113,0.18));
+    }
+
+    .slide.orange::before,
+    .slide.blue::before,
+    .slide.dark::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+      background-size: 42px 42px;
+      pointer-events: none;
+      opacity: 0.45;
+    }
+
+    .slide > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 1.08;
+      max-width: none;
+      font-weight: 950;
+    }
+
+    h2 {
+      font-size: 27px;
+      line-height: 1.18;
+      font-weight: 950;
+    }
+
+    h3 {
+      font-size: 16px;
+      line-height: 1.28;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.62;
+    }
+
+    .kicker {
+      border: 0;
+      background: rgba(8,212,199,0.14);
+      color: currentColor;
+      padding: 7px 12px;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      font-weight: 950;
+    }
+
+    .light .kicker {
+      color: #0b2a66;
+      background: #dff7f5;
+    }
+
+    .panel,
+    .source,
+    .score-box,
+    .verdict {
+      border-radius: 6px;
+      box-shadow: 0 10px 24px rgba(7, 26, 58, 0.10);
+    }
+
+    .panel {
+      background: rgba(255,255,255,0.88);
+      border-color: var(--wc-line);
+      padding: 15px;
+    }
+
+    .dark .panel,
+    .blue .panel,
+    .orange .panel {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(255,255,255,0.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .match-shell {
+      display: grid;
+      gap: 12px;
+      margin-top: 2px;
+    }
+
+    .event-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 14px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .event-band b {
+      display: block;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .event-band span {
+      display: block;
+      margin-top: 3px;
+      color: rgba(255,255,255,0.70);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .live-pill {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--wc-teal);
+      color: #052033;
+      font-size: 11px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .match-card {
+      border-radius: 8px;
+      background: var(--wc-card);
+      color: var(--wc-text);
+      box-shadow: 0 22px 58px rgba(1, 10, 28, 0.28);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .match-card-top {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 18px 15px;
+    }
+
+    .team-token {
+      display: grid;
+      gap: 8px;
+      align-content: center;
+      min-height: 126px;
+      padding: 15px 12px;
+      border-radius: 6px;
+      background: var(--wc-soft);
+      border: 1px solid var(--wc-line);
+    }
+
+    .team-token.right { text-align: right; }
+
+    .team-code {
+      display: inline-grid;
+      place-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      color: #fff;
+      background: #0b2a66;
+      font-size: 17px;
+      font-weight: 950;
+      justify-self: start;
+      box-shadow: inset 0 0 0 4px rgba(255,255,255,0.16);
+    }
+
+    .team-token.right .team-code { justify-self: end; }
+    .team-code.ned { background: linear-gradient(135deg, #ff7a1a, #0b2a66); }
+    .team-code.swe { background: linear-gradient(135deg, #0b5ed7 0 55%, #ffd84d 56%); color: #fff; }
+
+    .team-name {
+      font-size: 18px;
+      line-height: 1.05;
+      font-weight: 950;
+    }
+
+    .team-shape {
+      color: var(--wc-muted);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .score-lockup {
+      display: grid;
+      place-items: center;
+      min-width: 74px;
+      gap: 8px;
+    }
+
+    .score-lockup strong {
+      font-size: 38px;
+      line-height: 1;
+      color: var(--wc-text);
+    }
+
+    .score-lockup span {
+      padding: 6px 8px;
+      border-radius: 999px;
+      background: var(--wc-gold);
+      color: #201600;
+      font-size: 11px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+
+    .match-card-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-top: 1px solid var(--wc-line);
+      background: #f8fbff;
+    }
+
+    .mini-call {
+      padding: 12px 10px;
+      border-right: 1px solid var(--wc-line);
+    }
+
+    .mini-call:last-child { border-right: 0; }
+    .mini-call b {
+      display: block;
+      font-size: 21px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .mini-call span {
+      display: block;
+      color: var(--wc-muted);
+      font-size: 11px;
+      font-weight: 850;
+    }
+
+    .prob-strip {
+      display: grid;
+      gap: 8px;
+      padding: 15px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .prob-strip .label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 850;
+      color: rgba(255,255,255,0.76);
+    }
+
+    .prob-line {
+      display: grid;
+      grid-template-columns: 47.7fr 25.8fr 26.5fr;
+      height: 18px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.12);
+    }
+
+    .prob-line i:nth-child(1) { background: var(--wc-orange); }
+    .prob-line i:nth-child(2) { background: rgba(255,255,255,0.56); }
+    .prob-line i:nth-child(3) { background: var(--wc-teal); }
+
+    .hero-note {
+      padding: 13px 14px;
+      border-left: 4px solid var(--wc-teal);
+      background: rgba(255,255,255,0.10);
+      border-radius: 0 6px 6px 0;
+      font-size: 14px;
+      line-height: 1.58;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .source {
+      border-radius: 6px;
+      background: #fff;
+      padding: 13px;
+    }
+
+    .source .mark {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 11px;
+      background: #0b2a66;
+    }
+
+    .bar-row {
+      grid-template-columns: 68px 1fr 50px;
+      font-size: 12px;
+    }
+
+    .track {
+      height: 14px;
+      background: #dbe6f3;
+      border: 0;
+    }
+
+    .compare .stack {
+      height: 20px;
+      border-radius: 999px;
+    }
+
+    .score-card {
+      border-radius: 6px;
+      min-height: 78px;
+      background: #0b2a66;
+    }
+
+    .timeline {
+      gap: 8px;
+    }
+
+    .phase {
+      grid-template-columns: 62px 1fr;
+    }
+
+    .phase time,
+    .phase div {
+      border-radius: 6px;
+    }
+
+    .risk {
+      border-radius: 6px;
+    }
+
+    @media (max-width: 420px) {
+      .slide { padding: 22px 18px 28px; gap: 14px; }
+      h1 { font-size: 45px; }
+      h2 { font-size: 28px; }
+      .match-card-top { grid-template-columns: 1fr; }
+      .team-token.right { text-align: left; }
+      .team-token.right .team-code { justify-self: start; }
+      .score-lockup { min-width: 0; }
+      .score-lockup strong { font-size: 44px; }
+      .match-card-bottom { grid-template-columns: 1fr 1fr 1fr; }
+      .crest .code { font-size: 27px; }
+      .score-box strong { font-size: 25px; }
+      .grid2 { grid-template-columns: 1fr; }
+      .pitch { aspect-ratio: 0.62; }
+      .player { width: 58px; font-size: 9px; }
+      .score-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      html { scroll-snap-type: none; background: white; }
+      body { background: white; }
+      .deck { width: 100%; background: white; }
+      .slide { min-height: 100vh; page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide orange">
+      <div class="kicker">2026 FIFA World Cup · Group F · Match 35</div>
+      <h1>荷兰 vs 瑞典<br>赛前预测</h1>
+      <p class="muted">Houston Stadium · 生成时间：2026-06-21 01:03 北京时间</p>
+
+      <div class="match-shell">
+        <div class="event-band">
+          <div>
+            <b>小组赛 F 组 · Match 35</b>
+            <span>赛前/刚开球窗口，未抓到可验证赛中进球事件</span>
+          </div>
+          <div class="live-pill">90 MIN</div>
+        </div>
+
+        <div class="match-card" aria-label="Netherlands versus Sweden prediction card">
+          <div class="match-card-top">
+            <div class="team-token">
+              <div class="team-code ned">NED</div>
+              <div class="team-name">荷兰</div>
+              <div class="team-shape">4-3-3 · 控球与边路推进</div>
+            </div>
+            <div class="score-lockup">
+              <strong>2-1</strong>
+              <span>首选比分</span>
+            </div>
+            <div class="team-token right">
+              <div class="team-code swe">SWE</div>
+              <div class="team-name">瑞典</div>
+              <div class="team-shape">3-5-2 · 双前锋反击</div>
+            </div>
+          </div>
+          <div class="match-card-bottom">
+            <div class="mini-call"><b>47.7%</b><span>荷兰胜</span></div>
+            <div class="mini-call"><b>25.8%</b><span>平局</span></div>
+            <div class="mini-call"><b>26.5%</b><span>瑞典胜</span></div>
+          </div>
+        </div>
+
+        <div class="prob-strip">
+          <div class="label-row"><span>集成概率</span><span>市场 + 模型 + 战术</span></div>
+          <div class="prob-line"><i></i><i></i><i></i></div>
+          <div class="label-row"><span>荷兰胜</span><span>平局</span><span>瑞典胜</span></div>
+        </div>
+
+        <p class="hero-note">最终判断不是“荷兰稳胆”，而是荷兰在控球、阵容深度和市场位置上略占优；瑞典双前锋足以制造进球，1-1 和 1-2 必须防。</p>
+      </div>
+      <div class="page-no">01 / 总览</div>
+    </section>
+
+    <section class="slide light">
+      <div class="kicker">Executive Summary</div>
+      <h2>一句话：荷兰小优，但瑞典有足够的进球威胁。</h2>
+      <p class="muted">市场更支持荷兰；本地结构模型更警惕瑞典和平局。最终采用“市场 + 模型 + 战术”的集成判断。</p>
+
+      <div class="bar-chart">
+        <div class="bar-row">
+          <span>荷兰胜</span>
+          <div class="track"><div class="fill ned"></div></div>
+          <span>47.7%</span>
+        </div>
+        <div class="bar-row">
+          <span>平局</span>
+          <div class="track"><div class="fill draw"></div></div>
+          <span>25.8%</span>
+        </div>
+        <div class="bar-row">
+          <span>瑞典胜</span>
+          <div class="track"><div class="fill swe"></div></div>
+          <span>26.5%</span>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="panel big-stat">
+          <small>总进球倾向</small>
+          <b>2-3 球</b>
+          <p class="muted">双方进球概率偏高，但高温体感会压低持续节奏。</p>
+        </div>
+        <div class="panel big-stat">
+          <small>风险等级</small>
+          <b>中高</b>
+          <p class="muted">瑞典双前锋 + 荷兰末段防守管理，是最大波动源。</p>
+        </div>
+      </div>
+
+      <table class="mini-table">
+        <thead><tr><th>结论项</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>90 分钟方向</td><td>荷兰不败优先，主胜略优于平</td></tr>
+          <tr><td>半场</td><td>1-0 或 1-1</td></tr>
+          <tr><td>反方剧本</td><td>瑞典先手反击，比赛滑向 1-2</td></tr>
+        </tbody>
+      </table>
+      <div class="page-no">02 / 总判断</div>
+    </section>
+
+    <section class="slide dark">
+      <div class="kicker">Source Board</div>
+      <h2>信息源矩阵：官方赛程 + 国内入口 + 赔率阵容 + 天气风险。</h2>
+
+      <div class="source-list">
+        <div class="source">
+          <div class="mark">FIFA</div>
+          <div><b>FIFA Match Centre</b><small>Match 35，F 组，Houston Stadium，2026-06-20 17:00 UTC。</small></div>
+        </div>
+        <div class="source">
+          <div class="mark">咪咕</div>
+          <div><b>咪咕视频赛事入口</b><small>国内端“世界杯小组赛：荷兰VS瑞典”赛事页，可作为直播/资讯入口。</small></div>
+        </div>
+        <div class="source">
+          <div class="mark">FOX</div>
+          <div><b>FOX Sports</b><small>首发阵型、球员名单、首轮统计、赔率、休斯敦天气。</small></div>
+        </div>
+        <div class="source">
+          <div class="mark">LS</div>
+          <div><b>LiveScore / 央视 / 新华</b><small>赛程、裁判、场地、首轮 F 组赛果交叉核验。</small></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>实时状态核验</h3>
+        <p class="muted">截至 2026-06-21 01:03 北京时间，FOX / ESPN / LiveScore 未抓到可验证赛中进球事件，因此本报告按赛前/刚开球窗口预测处理。</p>
+      </div>
+      <div class="page-no">03 / 情报源</div>
+    </section>
+
+    <section class="slide light">
+      <div class="kicker">Market vs Model</div>
+      <h2>盘口与模型分歧：市场挺荷兰，结构模型提醒瑞典不弱。</h2>
+      <div class="legend">
+        <span><i style="background:var(--orange)"></i>荷兰胜</span>
+        <span><i style="background:#94a3b8"></i>平局</span>
+        <span><i style="background:var(--blue)"></i>瑞典胜</span>
+      </div>
+
+      <div class="compare-bars">
+        <div class="compare">
+          <span>市场</span>
+          <div class="stack" style="--a:56.9%;--b:23.2%;--c:19.9%;"><div></div><div></div><div></div></div>
+        </div>
+        <div class="compare">
+          <span>模型</span>
+          <div class="stack" style="--a:30.8%;--b:31.3%;--c:37.9%;"><div></div><div></div><div></div></div>
+        </div>
+        <div class="compare">
+          <span>集成</span>
+          <div class="stack" style="--a:47.7%;--b:25.8%;--c:26.5%;"><div></div><div></div><div></div></div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="panel big-stat">
+          <small>FOX 赔率锚点</small>
+          <b>-149</b>
+          <p class="muted">荷兰胜赔显示其仍是市场热门。</p>
+        </div>
+        <div class="panel big-stat">
+          <small>大球信号</small>
+          <b>2.5</b>
+          <p class="muted">大 2.5 偏热，市场预期双方都会制造机会。</p>
+        </div>
+      </div>
+
+      <p class="muted">解释：本地 skill 一开始被瑞典 5-1 的单场进球过度牵引；去除单场进球噪声后，仍对瑞典和平局更敏感。最终概率选择向盘口回归，但保留瑞典冷门权重。</p>
+      <div class="page-no">04 / 概率对比</div>
+    </section>
+
+    <section class="slide blue">
+      <div class="kicker">Tactical Map</div>
+      <h2>战术主线：荷兰边路推进，瑞典双前锋反击。</h2>
+      <div class="pitch" aria-label="Tactical football pitch">
+        <div class="player ned" style="left:42%;top:8%;">Brobbey</div>
+        <div class="player ned" style="left:16%;top:18%;">Gakpo</div>
+        <div class="player ned" style="right:16%;top:18%;">Malen</div>
+        <div class="player ned" style="left:27%;top:31%;">De Jong</div>
+        <div class="player ned" style="right:26%;top:31%;">Gravenberch</div>
+        <div class="player ned" style="right:5%;top:43%;">Dumfries</div>
+
+        <div class="player swe" style="left:28%;bottom:12%;">Gyokeres</div>
+        <div class="player swe" style="right:28%;bottom:12%;">Isak</div>
+        <div class="player swe" style="left:42%;bottom:28%;">Ayari</div>
+        <div class="player swe" style="left:13%;bottom:40%;">Gudmundsson</div>
+        <div class="player swe" style="right:11%;bottom:40%;">Bernhardsson</div>
+
+        <div class="arrow" style="left:70%;top:46%;width:92px;transform:rotate(-42deg);"></div>
+        <div class="arrow" style="left:42%;bottom:25%;width:128px;transform:rotate(-68deg);background:#fff;"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="panel">
+          <h3>荷兰优势点</h3>
+          <p class="muted">De Jong 控制节奏，Dumfries 前插和 Gakpo 内切能持续压迫瑞典边中结合部。</p>
+        </div>
+        <div class="panel">
+          <h3>瑞典杀招</h3>
+          <p class="muted">Gyokeres + Isak 不需要高控球，只要拿到身后空间就足以打出高质量射门。</p>
+        </div>
+      </div>
+      <div class="page-no">05 / 战术图</div>
+    </section>
+
+    <section class="slide light">
+      <div class="kicker">Scoreline Heat</div>
+      <h2>比分热度：1-1 单项最高，但胜负方向推到 2-1。</h2>
+      <div class="score-grid">
+        <div class="score-card"><b>1-1</b><small>11.6% · 单项最高</small><div class="bubble" style="--size:96px;--color:#94a3b8;"></div></div>
+        <div class="score-card"><b>1-0</b><small>10.1% · 荷兰小胜</small><div class="bubble" style="--size:88px;--color:#ff7a00;"></div></div>
+        <div class="score-card"><b>2-1</b><small>9.5% · 首选剧本</small><div class="bubble" style="--size:84px;--color:#ffd939;"></div></div>
+        <div class="score-card"><b>2-0</b><small>8.3% · 控制局</small><div class="bubble" style="--size:76px;--color:#ffb84d;"></div></div>
+        <div class="score-card"><b>0-1</b><small>7.0% · 瑞典偷袭</small><div class="bubble" style="--size:68px;--color:#1157d9;"></div></div>
+        <div class="score-card"><b>1-2</b><small>6.7% · 冷门防线</small><div class="bubble" style="--size:66px;--color:#2563eb;"></div></div>
+      </div>
+
+      <div class="panel">
+        <h3>为什么不是直接选 1-1？</h3>
+        <p class="muted">单一比分最高不等于方向最高。荷兰胜的比分簇包括 1-0、2-1、2-0、3-1；综合市场、阵容深度和控球优势后，2-1 比 1-1 更适合作为最终预测。</p>
+      </div>
+      <div class="page-no">06 / 比分分布</div>
+    </section>
+
+    <section class="slide dark">
+      <div class="kicker">Match Flow</div>
+      <h2>比赛进程模拟：荷兰先手，瑞典追击，末段决定胜负。</h2>
+      <div class="timeline">
+        <div class="phase"><time>0-15</time><div>荷兰控球占优，瑞典收紧中路，先观察 Van Dijk 两侧身后空间。</div></div>
+        <div class="phase"><time>16-30</time><div>荷兰右路和左肋开始形成传中与倒三角，瑞典第一次高质量反击出现。</div></div>
+        <div class="phase"><time>31-45+</time><div>荷兰更可能先得分；若瑞典拿到定位球，半场 1-1 风险上升。</div></div>
+        <div class="phase"><time>46-60</time><div>休斯敦高温体感压低持续压迫，比赛进入分段节奏。</div></div>
+        <div class="phase"><time>61-75</time><div>换人窗口打开，Depay、Summerville、Weghorst 类型的替补会改变禁区占领。</div></div>
+        <div class="phase"><time>76-90+</time><div>瑞典若落后会推高翼卫，荷兰可能通过反击或二点球完成 2-1。</div></div>
+      </div>
+      <div class="page-no">07 / 进程模拟</div>
+    </section>
+
+    <section class="slide blue">
+      <div class="kicker">Risk Board</div>
+      <h2>四个反方风险：这场不能当“荷兰稳胆”。</h2>
+      <div class="risk-matrix">
+        <div class="risk hot"><b>瑞典双前锋</b><p>Gyokeres 和 Isak 能把低控球转成高威胁，直接挑战荷兰中卫转身。</p></div>
+        <div class="risk mid"><b>荷兰末段管理</b><p>首轮两次领先仍被日本追成 2-2，领先后的控制还不稳。</p></div>
+        <div class="risk mid"><b>高温体感</b><p>88°F、体感约 100°F，持续压迫变难，偶发错误增加。</p></div>
+        <div class="risk cool"><b>定位球</b><p>瑞典三中卫和双前锋提高空战权重，荷兰也有 Van Dijk 高点。</p></div>
+      </div>
+
+      <div class="verdict">
+        <div class="final-score"><strong>2-1</strong><span>Final Call</span></div>
+        <p>荷兰整体实力、控球和市场位置仍在前面；瑞典进攻足够先进一球或追平，但最终更像荷兰靠阵容深度和边路二次进攻拿下。</p>
+      </div>
+      <div class="page-no">08 / 最终判断</div>
+    </section>
+  </main>
+</body>
+</html>

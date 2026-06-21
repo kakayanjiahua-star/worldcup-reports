@@ -1,0 +1,120 @@
+{
+  "latestRun": {
+    "runAtUtc": "2026-06-21T14:35:24.811Z",
+    "runAtBjt": "2026-06-21 22:35:24",
+    "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+    "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+    "windowHours": {
+      "target": 24,
+      "toleranceMinutes": 60,
+      "min": 23,
+      "max": 25
+    },
+    "sentReportCount": 4,
+    "eligibleCount": 0,
+    "eligibleMatches": [],
+    "nextMatch": {
+      "matchId": "400021494",
+      "stage": "First Stage",
+      "group": "Group J",
+      "homeCode": "ARG",
+      "awayCode": "AUT",
+      "homeName": "Argentina",
+      "awayName": "Austria",
+      "venue": "Dallas Stadium",
+      "kickoffUtc": "2026-06-22T17:00:00.000Z",
+      "kickoffBjt": "2026-06-23 01:00:00",
+      "deltaHours": 26.41
+    },
+    "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (26.41h away)."
+  },
+  "history": [
+    {
+      "runAtUtc": "2026-06-21T13:34:29.000Z",
+      "runAtBjt": "2026-06-21 21:34:29",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 0,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021483",
+        "stage": "First Stage",
+        "group": "Group H",
+        "homeCode": "ESP",
+        "awayCode": "KSA",
+        "homeName": "Spain",
+        "awayName": "Saudi Arabia",
+        "venue": "Atlanta Stadium",
+        "kickoffUtc": "2026-06-21T16:00:00.000Z",
+        "kickoffBjt": "2026-06-22 00:00:00",
+        "deltaHours": 2.425
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ESP vs KSA at 2026-06-22 00:00:00 BJT (2.425h away)."
+    },
+    {
+      "runAtUtc": "2026-06-21T14:33:53.537Z",
+      "runAtBjt": "2026-06-21 22:33:53",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 0,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021483",
+        "stage": "First Stage",
+        "group": "Group H",
+        "homeCode": "ESP",
+        "awayCode": "KSA",
+        "homeName": "Spain",
+        "awayName": "Saudi Arabia",
+        "venue": "Atlanta Stadium",
+        "kickoffUtc": "2026-06-21T16:00:00.000Z",
+        "kickoffBjt": "2026-06-22 00:00:00",
+        "deltaHours": 1.435
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ESP vs KSA at 2026-06-22 00:00:00 BJT (1.435h away)."
+    },
+    {
+      "runAtUtc": "2026-06-21T14:35:24.811Z",
+      "runAtBjt": "2026-06-21 22:35:24",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 4,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021494",
+        "stage": "First Stage",
+        "group": "Group J",
+        "homeCode": "ARG",
+        "awayCode": "AUT",
+        "homeName": "Argentina",
+        "awayName": "Austria",
+        "venue": "Dallas Stadium",
+        "kickoffUtc": "2026-06-22T17:00:00.000Z",
+        "kickoffBjt": "2026-06-23 01:00:00",
+        "deltaHours": 26.41
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (26.41h away)."
+    }
+  ]
+}

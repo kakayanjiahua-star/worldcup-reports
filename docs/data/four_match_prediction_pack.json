@@ -1,0 +1,221 @@
+{
+  "generatedAtBjt": "2026-06-21 22:08",
+  "fixtures": [
+    {
+      "id": "400021483",
+      "date": "2026-06-21T16:00:00Z",
+      "kickoffBjt": "2026-06-22 00:00",
+      "group": "H",
+      "home": "ESP",
+      "away": "KSA",
+      "venue": "Atlanta Stadium"
+    },
+    {
+      "id": "400021477",
+      "date": "2026-06-21T19:00:00Z",
+      "kickoffBjt": "2026-06-22 03:00",
+      "group": "G",
+      "home": "BEL",
+      "away": "IRN",
+      "venue": "Los Angeles Stadium"
+    },
+    {
+      "id": "400021487",
+      "date": "2026-06-21T22:00:00Z",
+      "kickoffBjt": "2026-06-22 06:00",
+      "group": "H",
+      "home": "URU",
+      "away": "CPV",
+      "venue": "Miami Stadium"
+    },
+    {
+      "id": "400021480",
+      "date": "2026-06-22T01:00:00Z",
+      "kickoffBjt": "2026-06-22 09:00",
+      "group": "G",
+      "home": "NZL",
+      "away": "EGY",
+      "venue": "BC Place Vancouver"
+    }
+  ],
+  "predictions": {
+    "ESP-KSA": {
+      "pick": "西班牙 2-0 沙特",
+      "short": "2-0",
+      "half": "1-0",
+      "probs": [
+        74,
+        18,
+        8
+      ],
+      "xg": [
+        2.05,
+        0.55
+      ],
+      "confidence": "中高",
+      "tone": "teal",
+      "thesis": "西班牙必须从 0-0 的低效开局反弹，控球和压迫会继续压住沙特；沙特低位防守能拖节奏，但反击产量不足。",
+      "tactical": [
+        "西班牙右路创造力和肋部小组配合是破局钥匙",
+        "沙特大概率 5-4-1/低位，优先保护禁区",
+        "若 60 分钟仍未进球，西班牙心理压力会放大"
+      ],
+      "risks": [
+        "西班牙首轮面对佛得角 0-0，破低位效率仍需验证",
+        "沙特首轮 1-1 乌拉圭说明其防守纪律与门将表现不弱"
+      ],
+      "timeline": [
+        "0-20：西班牙高控球，沙特压缩禁区前沿",
+        "21-45：边路传中或右肋内切制造首球",
+        "46-70：沙特被迫拉开后，西班牙二次进攻扩大比分",
+        "71-90：西班牙控节奏，防反击即可"
+      ],
+      "sources": [
+        "FanDuel/Lineups/NYPost 均显示西班牙为强热门",
+        "Barca Blaugranes 关注 Yamal 首发与沙特低位防守"
+      ]
+    },
+    "BEL-IRN": {
+      "pick": "比利时 2-1 伊朗",
+      "short": "2-1",
+      "half": "1-0",
+      "probs": [
+        61,
+        23,
+        16
+      ],
+      "xg": [
+        1.75,
+        0.95
+      ],
+      "confidence": "中",
+      "tone": "orange",
+      "thesis": "比利时个人能力和边路爆点更强，但伊朗首轮 2-2 展示了韧性，比赛不像赔率那样单向。",
+      "tactical": [
+        "Doku/边锋一对一会持续制造推进",
+        "伊朗会在中后场保持密度，伺机打反击和二点球",
+        "比利时若领先后退守，伊朗有追回一球的空间"
+      ],
+      "risks": [
+        "比利时首轮 1-1 埃及，防守转换仍有漏洞",
+        "伊朗对抗和定位球能把比赛拖进混战"
+      ],
+      "timeline": [
+        "0-15：比利时边路试探，伊朗压低阵线",
+        "16-45：比利时靠边路爆点或中锋支点领先",
+        "46-65：伊朗提高反击人数，比赛进入对攻片段",
+        "66-90：比利时换人维持冲击，伊朗有晚段进球机会"
+      ],
+      "sources": [
+        "FanDuel 摘要给出 Belgium ML -250",
+        "Kalshi 市场显示比利时约 68% 90 分钟胜出"
+      ]
+    },
+    "URU-CPV": {
+      "pick": "乌拉圭 1-0 佛得角",
+      "short": "1-0",
+      "half": "0-0",
+      "probs": [
+        58,
+        27,
+        15
+      ],
+      "xg": [
+        1.45,
+        0.6
+      ],
+      "confidence": "中",
+      "tone": "magenta",
+      "thesis": "乌拉圭需要从 1-1 沙特的慢热里提速，但佛得角刚 0-0 西班牙，低位质量很硬；更像一场小比分强攻。",
+      "tactical": [
+        "乌拉圭中前场压迫和二点球是主攻方向",
+        "佛得角会继续用低位+门将表现拖节奏",
+        "定位球和远射可能比阵地战更快破局"
+      ],
+      "risks": [
+        "佛得角已证明能把强队拉进低比分泥潭",
+        "乌拉圭若前 30 分钟效率低，平局概率明显抬升"
+      ],
+      "timeline": [
+        "0-30：乌拉圭控场但破密防困难",
+        "31-60：定位球、二点球和边路传中成为关键",
+        "61-80：乌拉圭靠强度压出制胜球",
+        "81-90：佛得角压上有限，乌拉圭守住小胜"
+      ],
+      "sources": [
+        "FOX 指出双方首次成年国家队交手",
+        "多家预览强调佛得角首轮防守表现"
+      ]
+    },
+    "NZL-EGY": {
+      "pick": "新西兰 1-2 埃及",
+      "short": "1-2",
+      "half": "0-1",
+      "probs": [
+        22,
+        27,
+        51
+      ],
+      "xg": [
+        1.05,
+        1.65
+      ],
+      "confidence": "中",
+      "tone": "blue",
+      "thesis": "新西兰能用身体和直接打法制造进球，但埃及整体攻击质量更高，Salah 牵制会打开第二攻击点。",
+      "tactical": [
+        "新西兰依赖 Wood 支点、定位球和第二落点",
+        "埃及会寻找右路/半空间提速机会",
+        "两队首轮都能进球，本场双方进球概率最高"
+      ],
+      "risks": [
+        "新西兰首轮 2-2 伊朗，说明其进攻并不低效",
+        "埃及若早早领先，比赛可能变成防反而不是大开大合"
+      ],
+      "timeline": [
+        "0-20：埃及控球更细，新西兰直接找前场支点",
+        "21-45：埃及利用边路或半空间先手",
+        "46-70：新西兰定位球扳回悬念",
+        "71-90：埃及靠反击或二次进攻打入制胜球"
+      ],
+      "sources": [
+        "Yahoo/ESPN odds 显示埃及为热门",
+        "VSiN 看好埃及至少打入两球"
+      ]
+    }
+  },
+  "sourceLinks": [
+    [
+      "FIFA 官方赛程",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
+    ],
+    [
+      "FanDuel 西班牙/沙特",
+      "https://www.fanduel.com/research/spain-vs-saudi-arabia-prediction-preview-picks-lineups-and-best-bets-world-cup-2026"
+    ],
+    [
+      "FanDuel 比利时/伊朗",
+      "https://www.fanduel.com/research/belgium-vs-iran-world-cup-prediction-best-bets-props-and-picks-for-today-june-21"
+    ],
+    [
+      "FOX 乌拉圭/佛得角",
+      "https://www.foxsports.com/stories/soccer/2026-world-cup-uruguay-cape-verde-odds-prediction-picks"
+    ],
+    [
+      "Guardian 今日赛程",
+      "https://www.theguardian.com/football/2026/jun/21/how-to-watch-world-cup-spain-saudi-arabia-tv-streaming"
+    ],
+    [
+      "Kalshi 比利时/伊朗市场",
+      "https://kalshi.com/markets/kxwcgame/world-cup-game/kxwcgame-26jun21beliri"
+    ],
+    [
+      "ESPN 新西兰/埃及赔率",
+      "https://www.espn.com/soccer/odds/_/gameId/760452"
+    ],
+    [
+      "VSiN 新西兰/埃及",
+      "https://vsin.com/soccer/egypt-vs-new-zealand-prediction-2026-fifa-world-cup-preview-and-pick/"
+    ]
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "name": "Netherlands vs Sweden 2026 World Cup Group F research snapshot",
+    "modelVersion": "model-v0.2-elo-dc",
+    "dataVersion": "official-e13a089f0aca65c6",
+    "sourceVersions": {
+      "manual-research-snapshot": "2026-06-21T00:59:00+08:00"
+    },
+    "strengthSnapshotVersion": "research-ratings-market-lineups-v1",
+    "expectedTeamCount": 4,
+    "generatedAt": "2026-06-21T00:59:00+08:00",
+    "sampleScope": "Manual research snapshot built from public pre-match sources; not an official FIFA data feed."
+  },
+  "teams": [
+    {
+      "id": "NED",
+      "code": "NED",
+      "name": "Netherlands",
+      "countryCode": "NLD",
+      "groupCode": "F",
+      "fifaRank": 8,
+      "eloRating": 1905,
+      "ratingValue": 1905,
+      "ratingSource": "manual_research_prior",
+      "strengthVersion": "research-ratings-market-lineups-v1",
+      "formScore": 60,
+      "attackStrength": 1.14,
+      "defenseStrength": 1.03,
+      "xGPerMatch": 1.1,
+      "xGAgainstPerMatch": 1.25
+    },
+    {
+      "id": "SWE",
+      "code": "SWE",
+      "name": "Sweden",
+      "countryCode": "SWE",
+      "groupCode": "F",
+      "fifaRank": 35,
+      "eloRating": 1765,
+      "ratingValue": 1765,
+      "ratingSource": "manual_research_prior",
+      "strengthVersion": "research-ratings-market-lineups-v1",
+      "formScore": 67,
+      "attackStrength": 1.09,
+      "defenseStrength": 1.0,
+      "xGPerMatch": 1.5,
+      "xGAgainstPerMatch": 1.15
+    },
+    {
+      "id": "JPN",
+      "code": "JPN",
+      "name": "Japan",
+      "countryCode": "JPN",
+      "groupCode": "F",
+      "fifaRank": 18,
+      "eloRating": 1830,
+      "ratingValue": 1830,
+      "ratingSource": "manual_research_prior",
+      "strengthVersion": "research-ratings-market-lineups-v1",
+      "formScore": 63,
+      "attackStrength": 1.05,
+      "defenseStrength": 1.02,
+      "xGPerMatch": 1.35,
+      "xGAgainstPerMatch": 1.25
+    },
+    {
+      "id": "TUN",
+      "code": "TUN",
+      "name": "Tunisia",
+      "countryCode": "TUN",
+      "groupCode": "F",
+      "fifaRank": 49,
+      "eloRating": 1635,
+      "ratingValue": 1635,
+      "ratingSource": "manual_research_prior",
+      "strengthVersion": "research-ratings-market-lineups-v1",
+      "formScore": 48,
+      "attackStrength": 0.94,
+      "defenseStrength": 1.12,
+      "xGPerMatch": 1.05,
+      "xGAgainstPerMatch": 1.55
+    }
+  ],
+  "matchStates": [
+    {
+      "matchId": "F-NED-JPN",
+      "matchNumber": 1,
+      "stage": "group",
+      "homeTeamId": "NED",
+      "awayTeamId": "JPN",
+      "venueCountryCode": "USA",
+      "status": "final",
+      "actualScore90min": {
+        "home": 2,
+        "away": 2
+      }
+    },
+    {
+      "matchId": "F-SWE-TUN",
+      "matchNumber": 2,
+      "stage": "group",
+      "homeTeamId": "SWE",
+      "awayTeamId": "TUN",
+      "venueCountryCode": "MEX",
+      "status": "final",
+      "actualScore90min": {
+        "home": 5,
+        "away": 1
+      }
+    },
+    {
+      "matchId": "F-NED-SWE",
+      "matchNumber": 35,
+      "stage": "group",
+      "homeTeamId": "NED",
+      "awayTeamId": "SWE",
+      "venueCountryCode": "USA",
+      "status": "scheduled"
+    }
+  ],
+  "contextAdjustments": [
+    {
+      "id": "ned-lineup-control",
+      "title": "Netherlands midfield control with De Jong starting",
+      "scope": "match",
+      "matchId": "F-NED-SWE",
+      "teamCode": "NED",
+      "target": "home",
+      "derivation": "manual_review",
+      "effectiveFrom": "2026-06-20T00:00:00Z",
+      "impact": {
+        "formScoreDelta": 2,
+        "attackMultiplier": 1.02
+      }
+    },
+    {
+      "id": "swe-two-striker-form",
+      "title": "Sweden Isak-Gyokeres two-striker form",
+      "scope": "match",
+      "matchId": "F-NED-SWE",
+      "teamCode": "SWE",
+      "target": "away",
+      "derivation": "manual_review",
+      "effectiveFrom": "2026-06-20T00:00:00Z",
+      "impact": {
+        "formScoreDelta": 3,
+        "attackMultiplier": 1.05
+      }
+    },
+    {
+      "id": "houston-heat-tempo",
+      "title": "Houston heat and humidity tempo drag",
+      "scope": "match",
+      "matchId": "F-NED-SWE",
+      "target": "both",
+      "derivation": "manual_review",
+      "effectiveFrom": "2026-06-20T00:00:00Z",
+      "impact": {
+        "attackMultiplier": 0.98
+      }
+    }
+  ],
+  "officialFacts": [
+    {
+      "source": "FIFA match centre",
+      "fact": "Match 35, Group F, Netherlands vs Sweden, Houston Stadium, 20 June 2026 17:00 UTC."
+    },
+    {
+      "source": "FOX Sports",
+      "fact": "Pre-match lineups list Netherlands in 4-3-3 and Sweden in 3-5-2."
+    },
+    {
+      "source": "Migu/App Store event page",
+      "fact": "Migu lists World Cup group-stage Netherlands vs Sweden as a featured event."
+    }
+  ]
+}
