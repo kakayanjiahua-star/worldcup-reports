@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 
 const FIFA_URL = "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023";
-const generatedAtBjt = "2026-06-21 22:08";
+const generatedAtBjt = "2026-06-22 00:28";
 
 const teamZh = {
   ESP: "西班牙", KSA: "沙特", BEL: "比利时", IRN: "伊朗",
@@ -10,18 +10,18 @@ const teamZh = {
 
 const predictions = {
   "ESP-KSA": {
-    pick: "西班牙 2-0 沙特",
-    short: "2-0",
-    half: "1-0",
-    probs: [74, 18, 8],
-    xg: [2.05, 0.55],
-    confidence: "中高",
+    pick: "西班牙 5-0 沙特",
+    short: "5-0",
+    half: "3-0",
+    probs: [99, 1, 0],
+    xg: [4.75, 0.35],
+    confidence: "高",
     tone: "teal",
-    thesis: "西班牙必须从 0-0 的低效开局反弹，控球和压迫会继续压住沙特；沙特低位防守能拖节奏，但反击产量不足。",
-    tactical: ["西班牙右路创造力和肋部小组配合是破局钥匙", "沙特大概率 5-4-1/低位，优先保护禁区", "若 60 分钟仍未进球，西班牙心理压力会放大"],
-    risks: ["西班牙首轮面对佛得角 0-0，破低位效率仍需验证", "沙特首轮 1-1 乌拉圭说明其防守纪律与门将表现不弱"],
-    timeline: ["0-20：西班牙高控球，沙特压缩禁区前沿", "21-45：边路传中或右肋内切制造首球", "46-70：沙特被迫拉开后，西班牙二次进攻扩大比分", "71-90：西班牙控节奏，防反击即可"],
-    sources: ["FanDuel/Lineups/NYPost 均显示西班牙为强热门", "Barca Blaugranes 关注 Yamal 首发与沙特低位防守"]
+    thesis: "赛中更新：FIFA 官方 API 显示第 25 分钟西班牙已 3-0 领先沙特，赛前 2-0 预测明显保守。现在比赛核心不再是胜负，而是西班牙是否继续扩大净胜球。",
+    tactical: ["亚马尔早段进球打开低位防线，沙特 5-4-1 的禁区保护已被打穿", "西班牙边后卫持续压上，肋部传切和二点球会继续制造射门", "沙特若继续低位只能止损，若前压则会给西班牙更多身后空间"],
+    risks: ["3-0 后西班牙可能在下半场控制体能，进球速度下降", "沙特若通过定位球或反击追回一球，比分可能变成 4-1/5-1"],
+    timeline: ["0-25：官方实时比分西班牙 3-0，比赛已进入大胜轨道", "26-45：西班牙大概率继续控球，沙特目标转为避免半场崩盘", "46-70：若西班牙不大规模收力，第四球概率很高", "71-90：净胜球管理和轮换优先，终场倾向 5-0，防 5-1"],
+    sources: ["FIFA 官方 API：25' 西班牙 3-0 沙特，MatchStatus=live", "Guardian 直播确认 Lamine Yamal 早段进球", "赛前 FanDuel/Lineups/NYPost 均显示西班牙为强热门"]
   },
   "BEL-IRN": {
     pick: "比利时 2-1 伊朗",
