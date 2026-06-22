@@ -1,0 +1,229 @@
+{
+  "generatedAtBjt": "2026-06-22 22:13:25",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-22 01:00:00",
+  "match": {
+    "matchId": "400021494",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group J",
+    "kickoffUtc": "2026-06-22T17:00:00Z",
+    "kickoffBjt": "2026-06-23 01:00:00",
+    "venue": "Dallas Stadium",
+    "city": "Dallas",
+    "referee": "Amin Mohamed Omar",
+    "home": {
+      "code": "ARG",
+      "name": "Argentina"
+    },
+    "away": {
+      "code": "AUT",
+      "name": "Austria"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021496",
+      "kickoffBjt": "2026-06-17 09:00:00",
+      "match": "ARG 3-0 ALG",
+      "venue": "Kansas City Stadium"
+    },
+    {
+      "matchId": "400021498",
+      "kickoffBjt": "2026-06-17 12:00:00",
+      "match": "AUT 3-1 JOR",
+      "venue": "San Francisco Bay Area Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "played": 1,
+      "gf": 3,
+      "ga": 0,
+      "gd": 3,
+      "points": 3
+    },
+    {
+      "code": "AUT",
+      "name": "Austria",
+      "played": 1,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "JOR",
+      "name": "Jordan",
+      "played": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "points": 0
+    },
+    {
+      "code": "ALG",
+      "name": "Algeria",
+      "played": 1,
+      "gf": 0,
+      "ga": 3,
+      "gd": -3,
+      "points": 0
+    }
+  ],
+  "projectedLineups": {
+    "argentina": {
+      "shape": "4-3-3 / 控球时 3-2-5",
+      "players": [
+        "E. Martinez",
+        "Molina",
+        "Romero",
+        "L. Martinez",
+        "Medina",
+        "De Paul",
+        "Mac Allister",
+        "Enzo Fernandez",
+        "N. Gonzalez",
+        "Messi",
+        "Julian Alvarez"
+      ],
+      "notes": [
+        "Montiel 伤情使 Molina 更可能首发",
+        "Tagliafico 小腿问题偏深度影响",
+        "Alvarez 有机会替代 Lautaro 提供更强冲刺"
+      ]
+    },
+    "austria": {
+      "shape": "4-2-3-1 / 高位压迫",
+      "players": [
+        "A. Schlager",
+        "Laimer",
+        "Lienhart",
+        "Alaba",
+        "Mwene",
+        "Seiwald",
+        "X. Schlager",
+        "Schmid",
+        "Chukwuemeka",
+        "Sabitzer",
+        "Kalajdzic"
+      ],
+      "notes": [
+        "Posch 下颌伤势存疑，Laimer 可能回撤右后卫",
+        "Sabitzer 和 Schmid 是反击第一传/第二点核心",
+        "Arnautovic 可能作为替补支点改变禁区对抗"
+      ]
+    }
+  },
+  "weatherAndVenue": {
+    "localWeather": "NWS Arlington morning conditions around 77-83°F, high humidity; AccuWeather June normals/search snippets indicate 92-98°F highs.",
+    "venueNote": "AT&T/Dallas Stadium venue context reduces open-air weather weighting; verify final roof operation near kickoff."
+  },
+  "market": {
+    "oddsSample": "RotoWire/Covers samples around Argentina -170 to -223, draw +317 to +340, Austria +567 to +700; total 2.5 near even money.",
+    "normalizedImplied": {
+      "argentina": 62,
+      "draw": 23,
+      "austria": 15
+    }
+  },
+  "model": {
+    "probabilities": {
+      "argentina": 64,
+      "draw": 21,
+      "austria": 15
+    },
+    "marketNormalized": {
+      "argentina": 62,
+      "draw": 23,
+      "austria": 15
+    },
+    "xg": {
+      "argentina": 1.95,
+      "austria": 0.88
+    },
+    "pick": "阿根廷 2-0 奥地利",
+    "confidence": "中高",
+    "scoreDistribution": [
+      [
+        "2-0",
+        17
+      ],
+      [
+        "2-1",
+        15
+      ],
+      [
+        "1-0",
+        13
+      ],
+      [
+        "3-1",
+        10
+      ],
+      [
+        "1-1",
+        9
+      ],
+      [
+        "3-0",
+        8
+      ],
+      [
+        "0-0",
+        5
+      ],
+      [
+        "1-2",
+        4
+      ]
+    ],
+    "thesis": "补发结论：这场本应在北京时间 6 月 22 日 01:00 推送。阿根廷首轮 3-0 完胜阿尔及利亚，奥地利 3-1 击败约旦，两队同积 3 分；胜者大概率锁定 32 强席位并拿到小组头名主动权。模型倾向阿根廷控球压制，奥地利高压能制造前 25 分钟的不稳定，但高位身后空间会被 Messi、Alvarez 和中场直塞反复利用。",
+    "risks": [
+      "奥地利 PPDA 和前场压迫强度靠前，若抢到高位失误，比赛会从 2-0 变成 2-1 或 1-1。",
+      "阿根廷若为了控制体能而降低节奏，进球数会低于市场对大球的预期。",
+      "右后卫伤停变量集中：Montiel 缺阵或保护性轮换、Posch 伤情，会改变两队边路对抗。",
+      "如果 Jordan vs Algeria 的结果压力被实时传导，本场末段风险偏好可能下降。"
+    ]
+  },
+  "sources": [
+    [
+      "FIFA 官方比赛中心",
+      "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021494"
+    ],
+    [
+      "FIFA 官方赛程 API",
+      "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023"
+    ],
+    [
+      "RotoWire 预计阵容/伤停/赔率",
+      "https://www.rotowire.com/soccer/article/argentina-vs-austria-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-119066"
+    ],
+    [
+      "Sports Illustrated 预计首发",
+      "https://www.si.com/soccer/argentina-vs-austria-world-cup-preview-predictions-lineups-6-22-26"
+    ],
+    [
+      "Covers 盘口/天气/伤停",
+      "https://www.covers.com/world-cup/argentina-vs-austria-prediction-top-picks-odds-today-6-22-2026"
+    ],
+    [
+      "Guardian 赛前现场报道",
+      "https://www.theguardian.com/football/2026/jun/22/lionel-messi-argentina-austria-world-cup"
+    ],
+    [
+      "SB Nation G组/J组出线情景",
+      "https://www.sbnation.com/fifa-world-cup/1119405/world-cup-2026-scenarios-argentina-messi"
+    ],
+    [
+      "Arlington 官方赛事页",
+      "https://www.arlingtontx.gov/Community-Calendar/World-Cup-Events/Argentina-vs-Austria"
+    ],
+    [
+      "NWS Arlington 天气",
+      "https://forecast.weather.gov/MapClick.php?lat=32.69&lon=-97.13"
+    ]
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "generatedAtBjt": "2026-06-22 22:13:27",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-22 08:00:00",
+  "match": {
+    "matchId": "400021491",
+    "matchCode": "NOR-SEN",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group I",
+    "kickoffUtc": "2026-06-23T00:00:00Z",
+    "kickoffBjt": "2026-06-23 08:00:00",
+    "venue": "New York/New Jersey Stadium",
+    "city": "New Jersey",
+    "home": {
+      "code": "NOR",
+      "name": "Norway"
+    },
+    "away": {
+      "code": "SEN",
+      "name": "Senegal"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021490",
+      "kickoffBjt": "2026-06-17 03:00:00",
+      "match": "FRA 3-1 SEN",
+      "venue": "New York/New Jersey Stadium"
+    },
+    {
+      "matchId": "400021488",
+      "kickoffBjt": "2026-06-17 06:00:00",
+      "match": "IRQ 1-4 NOR",
+      "venue": "Boston Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "played": 1,
+      "gf": 4,
+      "ga": 1,
+      "gd": 3,
+      "points": 3
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "played": 1,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "SEN",
+      "name": "Senegal",
+      "played": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "points": 0
+    },
+    {
+      "code": "IRQ",
+      "name": "Iraq",
+      "played": 1,
+      "gf": 1,
+      "ga": 4,
+      "gd": -3,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021491",
+    "matchCode": "NOR-SEN",
+    "title": "挪威 vs 塞内加尔",
+    "localHtml": "挪威vs塞内加尔赛前24小时补发报告.html",
+    "localJson": "norway_senegal_prematch_snapshot.json",
+    "publicTarget": "norway-senegal-prematch.html",
+    "scheduledPushBjt": "2026-06-22 08:00:00",
+    "pick": "挪威 1-1 塞内加尔",
+    "confidence": "中",
+    "probabilities": {
+      "home": 39,
+      "draw": 30,
+      "away": 31
+    },
+    "marketNormalized": {
+      "home": 40,
+      "draw": 28,
+      "away": 32
+    },
+    "xg": {
+      "home": 1.25,
+      "away": 1.18
+    },
+    "thesis": "挪威首轮 4-1 伊拉克，塞内加尔 1-3 法国。市场只给挪威小幅优势，Covers 直接看平局和小球。模型认为 Haaland 仍是最大单点，但 Koulibaly、Gueye 双后腰和 Senegal 的边路速度能显著降低挪威连续喂球质量。",
+    "lineups": {
+      "home": {
+        "shape": "4-3-3",
+        "players": "Nyland; Ryerson, Ajer, Heggem, Moller Wolfe; Aursnes, Berge, Odegaard; Nusa, Haaland, Sorloth",
+        "injury": "Moller Wolfe 大概率可出战"
+      },
+      "away": {
+        "shape": "4-2-3-1",
+        "players": "Mendy; Diatta, Koulibaly, Niakhate, Diouf; P. Gueye, I. Gueye; Sarr, Camara, Mane; Jackson",
+        "injury": "无关键伤停"
+      }
+    },
+    "tactics": [
+      "挪威会通过 Odegaard 左右转移，寻找 Haaland 与 Sorloth 的禁区对抗。",
+      "塞内加尔中场人数更足，目标是切断 Odegaard 到 Haaland 的最后一传。",
+      "Mane/Sarr 对挪威边后卫身后冲刺，是塞内加尔最稳定的反击出口。"
+    ],
+    "risks": [
+      "Haaland 早早破门会迫使塞内加尔提高风险，比赛从小球变大球。",
+      "雨战会降低地面推进质量，定位球和二点球权重上升。"
+    ],
+    "scores": [
+      [
+        "1-1",
+        17
+      ],
+      [
+        "1-0",
+        12
+      ],
+      [
+        "0-1",
+        11
+      ],
+      [
+        "2-1",
+        10
+      ],
+      [
+        "0-0",
+        9
+      ],
+      [
+        "1-2",
+        8
+      ],
+      [
+        "2-2",
+        7
+      ]
+    ],
+    "weather": "Covers 预告 MetLife Stadium 有雨，开球时温度低于 70°F。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021491"
+      ],
+      [
+        "RotoWire 挪威 vs 塞内加尔",
+        "https://www.rotowire.com/soccer/article/norway-vs-senegal-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-119063"
+      ],
+      [
+        "Covers 挪威 vs 塞内加尔",
+        "https://www.covers.com/world-cup/norway-vs-senegal-prediction-picks-odds-monday-6-22-2026"
+      ],
+      [
+        "SB Nation Group I 情景",
+        "https://www.sbnation.com/fifa-world-cup/1119397/world-cup-2026-france-norway-group-i-scenarios"
+      ]
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "latestRun": {
-    "runAtUtc": "2026-06-21T14:35:24.811Z",
-    "runAtBjt": "2026-06-21 22:35:24",
+    "runAtUtc": "2026-06-22T14:13:28.116Z",
+    "runAtBjt": "2026-06-22 22:13:28",
     "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
     "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
     "windowHours": {
@@ -10,23 +10,23 @@
       "min": 23,
       "max": 25
     },
-    "sentReportCount": 4,
+    "sentReportCount": 8,
     "eligibleCount": 0,
     "eligibleMatches": [],
     "nextMatch": {
-      "matchId": "400021494",
+      "matchId": "400021503",
       "stage": "First Stage",
-      "group": "Group J",
-      "homeCode": "ARG",
-      "awayCode": "AUT",
-      "homeName": "Argentina",
-      "awayName": "Austria",
-      "venue": "Dallas Stadium",
-      "kickoffUtc": "2026-06-22T17:00:00.000Z",
-      "kickoffBjt": "2026-06-23 01:00:00",
-      "deltaHours": 26.41
+      "group": "Group K",
+      "homeCode": "POR",
+      "awayCode": "UZB",
+      "homeName": "Portugal",
+      "awayName": "Uzbekistan",
+      "venue": "Houston Stadium",
+      "kickoffUtc": "2026-06-23T17:00:00.000Z",
+      "kickoffBjt": "2026-06-24 01:00:00",
+      "deltaHours": 26.776
     },
-    "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (26.41h away)."
+    "note": "No unsent match is inside the 23-25 hour window. Nearest future match is POR vs UZB at 2026-06-24 01:00:00 BJT (26.776h away)."
   },
   "history": [
     {
@@ -115,6 +115,226 @@
         "deltaHours": 26.41
       },
       "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (26.41h away)."
+    },
+    {
+      "runAtUtc": "2026-06-22T05:01:27.508Z",
+      "runAtBjt": "2026-06-22 13:01:27",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 4,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021494",
+        "stage": "First Stage",
+        "group": "Group J",
+        "homeCode": "ARG",
+        "awayCode": "AUT",
+        "homeName": "Argentina",
+        "awayName": "Austria",
+        "venue": "Dallas Stadium",
+        "kickoffUtc": "2026-06-22T17:00:00.000Z",
+        "kickoffBjt": "2026-06-23 01:00:00",
+        "deltaHours": 11.976
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (11.976h away)."
+    },
+    {
+      "runAtUtc": "2026-06-22T06:01:49.768Z",
+      "runAtBjt": "2026-06-22 14:01:49",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 4,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021494",
+        "stage": "First Stage",
+        "group": "Group J",
+        "homeCode": "ARG",
+        "awayCode": "AUT",
+        "homeName": "Argentina",
+        "awayName": "Austria",
+        "venue": "Dallas Stadium",
+        "kickoffUtc": "2026-06-22T17:00:00.000Z",
+        "kickoffBjt": "2026-06-23 01:00:00",
+        "deltaHours": 10.97
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (10.97h away)."
+    },
+    {
+      "runAtUtc": "2026-06-22T13:59:36.210Z",
+      "runAtBjt": "2026-06-22 21:59:36",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 4,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021494",
+        "stage": "First Stage",
+        "group": "Group J",
+        "homeCode": "ARG",
+        "awayCode": "AUT",
+        "homeName": "Argentina",
+        "awayName": "Austria",
+        "venue": "Dallas Stadium",
+        "kickoffUtc": "2026-06-22T17:00:00.000Z",
+        "kickoffBjt": "2026-06-23 01:00:00",
+        "deltaHours": 3.007
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is ARG vs AUT at 2026-06-23 01:00:00 BJT (3.007h away)."
+    },
+    {
+      "runAtUtc": "2026-06-22T14:10:17.518Z",
+      "runAtBjt": "2026-06-22 22:10:17",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 5,
+      "eligibleCount": 3,
+      "eligibleMatches": [
+        {
+          "matchId": "400021492",
+          "stage": "First Stage",
+          "group": "Group I",
+          "homeCode": "FRA",
+          "awayCode": "IRQ",
+          "homeName": "France",
+          "awayName": "Iraq",
+          "venue": "Philadelphia Stadium",
+          "kickoffUtc": "2026-06-22T21:00:00.000Z",
+          "kickoffBjt": "2026-06-23 05:00:00",
+          "deltaHours": 6.828,
+          "triggerType": "backfill-missed-24h-window",
+          "scheduledPushBjt": "2026-06-22 05:00:00"
+        },
+        {
+          "matchId": "400021491",
+          "stage": "First Stage",
+          "group": "Group I",
+          "homeCode": "NOR",
+          "awayCode": "SEN",
+          "homeName": "Norway",
+          "awayName": "Senegal",
+          "venue": "New York/New Jersey Stadium",
+          "kickoffUtc": "2026-06-23T00:00:00.000Z",
+          "kickoffBjt": "2026-06-23 08:00:00",
+          "deltaHours": 9.828,
+          "triggerType": "backfill-missed-24h-window",
+          "scheduledPushBjt": "2026-06-22 08:00:00"
+        },
+        {
+          "matchId": "400021499",
+          "stage": "First Stage",
+          "group": "Group J",
+          "homeCode": "JOR",
+          "awayCode": "ALG",
+          "homeName": "Jordan",
+          "awayName": "Algeria",
+          "venue": "San Francisco Bay Area Stadium",
+          "kickoffUtc": "2026-06-23T03:00:00.000Z",
+          "kickoffBjt": "2026-06-23 11:00:00",
+          "deltaHours": 12.828,
+          "triggerType": "backfill-missed-24h-window",
+          "scheduledPushBjt": "2026-06-22 11:00:00"
+        }
+      ],
+      "nextMatch": {
+        "matchId": "400021492",
+        "stage": "First Stage",
+        "group": "Group I",
+        "homeCode": "FRA",
+        "awayCode": "IRQ",
+        "homeName": "France",
+        "awayName": "Iraq",
+        "venue": "Philadelphia Stadium",
+        "kickoffUtc": "2026-06-22T21:00:00.000Z",
+        "kickoffBjt": "2026-06-23 05:00:00",
+        "deltaHours": 6.828
+      },
+      "note": "Found 3 unsent match(es) that have entered the 25h pre-match reporting threshold, including any missed 24h-window backfills."
+    },
+    {
+      "runAtUtc": "2026-06-22T14:12:47.835Z",
+      "runAtBjt": "2026-06-22 22:12:47",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 8,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021503",
+        "stage": "First Stage",
+        "group": "Group K",
+        "homeCode": "POR",
+        "awayCode": "UZB",
+        "homeName": "Portugal",
+        "awayName": "Uzbekistan",
+        "venue": "Houston Stadium",
+        "kickoffUtc": "2026-06-23T17:00:00.000Z",
+        "kickoffBjt": "2026-06-24 01:00:00",
+        "deltaHours": 26.787
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is POR vs UZB at 2026-06-24 01:00:00 BJT (26.787h away)."
+    },
+    {
+      "runAtUtc": "2026-06-22T14:13:28.116Z",
+      "runAtBjt": "2026-06-22 22:13:28",
+      "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
+      "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
+      "windowHours": {
+        "target": 24,
+        "toleranceMinutes": 60,
+        "min": 23,
+        "max": 25
+      },
+      "sentReportCount": 8,
+      "eligibleCount": 0,
+      "eligibleMatches": [],
+      "nextMatch": {
+        "matchId": "400021503",
+        "stage": "First Stage",
+        "group": "Group K",
+        "homeCode": "POR",
+        "awayCode": "UZB",
+        "homeName": "Portugal",
+        "awayName": "Uzbekistan",
+        "venue": "Houston Stadium",
+        "kickoffUtc": "2026-06-23T17:00:00.000Z",
+        "kickoffBjt": "2026-06-24 01:00:00",
+        "deltaHours": 26.776
+      },
+      "note": "No unsent match is inside the 23-25 hour window. Nearest future match is POR vs UZB at 2026-06-24 01:00:00 BJT (26.776h away)."
     }
   ]
 }

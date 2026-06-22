@@ -1,0 +1,172 @@
+{
+  "generatedAtBjt": "2026-06-22 22:13:27",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-22 05:00:00",
+  "match": {
+    "matchId": "400021492",
+    "matchCode": "FRA-IRQ",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group I",
+    "kickoffUtc": "2026-06-22T21:00:00Z",
+    "kickoffBjt": "2026-06-23 05:00:00",
+    "venue": "Philadelphia Stadium",
+    "city": "Philadelphia",
+    "home": {
+      "code": "FRA",
+      "name": "France"
+    },
+    "away": {
+      "code": "IRQ",
+      "name": "Iraq"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021490",
+      "kickoffBjt": "2026-06-17 03:00:00",
+      "match": "FRA 3-1 SEN",
+      "venue": "New York/New Jersey Stadium"
+    },
+    {
+      "matchId": "400021488",
+      "kickoffBjt": "2026-06-17 06:00:00",
+      "match": "IRQ 1-4 NOR",
+      "venue": "Boston Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "played": 1,
+      "gf": 4,
+      "ga": 1,
+      "gd": 3,
+      "points": 3
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "played": 1,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "SEN",
+      "name": "Senegal",
+      "played": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "points": 0
+    },
+    {
+      "code": "IRQ",
+      "name": "Iraq",
+      "played": 1,
+      "gf": 1,
+      "ga": 4,
+      "gd": -3,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021492",
+    "matchCode": "FRA-IRQ",
+    "title": "法国 vs 伊拉克",
+    "localHtml": "法国vs伊拉克赛前24小时补发报告.html",
+    "localJson": "france_iraq_prematch_snapshot.json",
+    "publicTarget": "france-iraq-prematch.html",
+    "scheduledPushBjt": "2026-06-22 05:00:00",
+    "pick": "法国 4-1 伊拉克",
+    "confidence": "高",
+    "probabilities": {
+      "home": 84,
+      "draw": 10,
+      "away": 6
+    },
+    "marketNormalized": {
+      "home": 86,
+      "draw": 8,
+      "away": 6
+    },
+    "xg": {
+      "home": 3.05,
+      "away": 0.78
+    },
+    "thesis": "法国首轮 3-1 击败塞内加尔，伊拉克 1-4 不敌挪威。盘口样本给到法国 -1200、总进球 3.5 附近，说明市场已经把这场定价成强弱分明。模型同意法国大胜方向，但保留伊拉克通过反击或法国边后卫身后拿到一球的风险。",
+    "lineups": {
+      "home": {
+        "shape": "4-2-3-1",
+        "players": "Maignan; Kounde, Upamecano, Saliba, Digne; Kone, Rabiot; Dembele, Olise, Barcola; Mbappe",
+        "injury": "无关键伤停"
+      },
+      "away": {
+        "shape": "4-4-2",
+        "players": "Jalal Hassan; Ali, Hashim, Tahseen, Doski; Bayesh, Alammari, Ismail, Jasim; Alhamadi, Hussein",
+        "injury": "Alhamadi 存疑"
+      }
+    },
+    "tactics": [
+      "法国左路 Barcola/Digne 与中路 Mbappe 的换位会持续冲击伊拉克低位。",
+      "Olise 在 10 号位接二点球，能把伊拉克防线压在禁区前沿。",
+      "伊拉克需要 Hussein 支点和 Jasim 反击第一脚，目标是偷到一次转换。"
+    ],
+    "risks": [
+      "费城天气预报有雷暴风险，若节奏被中断，会压低法国连续进攻收益。",
+      "法国首轮边路防守并非无懈可击，伊拉克若先进球会显著改变大胜盘口。"
+    ],
+    "scores": [
+      [
+        "4-0",
+        15
+      ],
+      [
+        "3-0",
+        14
+      ],
+      [
+        "4-1",
+        13
+      ],
+      [
+        "3-1",
+        12
+      ],
+      [
+        "2-0",
+        10
+      ],
+      [
+        "5-1",
+        7
+      ],
+      [
+        "2-1",
+        6
+      ]
+    ],
+    "weather": "Covers 预告费城 80-84°F，并有赛前/赛中雷暴可能。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021492"
+      ],
+      [
+        "Covers 法国 vs 伊拉克",
+        "https://www.covers.com/world-cup/france-vs-iraq-prediction-picks-odds-monday-6-22-2026"
+      ],
+      [
+        "SBG 盘口预览",
+        "https://www.sbgglobal.eu/football-soccer/france-vs-iraq-2026-fifa-world-cup-betting-preview-best-bets/"
+      ],
+      [
+        "SB Nation Group I 情景",
+        "https://www.sbnation.com/fifa-world-cup/1119397/world-cup-2026-france-norway-group-i-scenarios"
+      ]
+    ]
+  }
+}

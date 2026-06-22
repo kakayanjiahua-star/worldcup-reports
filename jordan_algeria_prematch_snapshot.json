@@ -1,0 +1,176 @@
+{
+  "generatedAtBjt": "2026-06-22 22:13:27",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-22 11:00:00",
+  "match": {
+    "matchId": "400021499",
+    "matchCode": "JOR-ALG",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group J",
+    "kickoffUtc": "2026-06-23T03:00:00Z",
+    "kickoffBjt": "2026-06-23 11:00:00",
+    "venue": "San Francisco Bay Area Stadium",
+    "city": "San Francisco Bay Area",
+    "home": {
+      "code": "JOR",
+      "name": "Jordan"
+    },
+    "away": {
+      "code": "ALG",
+      "name": "Algeria"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021496",
+      "kickoffBjt": "2026-06-17 09:00:00",
+      "match": "ARG 3-0 ALG",
+      "venue": "Kansas City Stadium"
+    },
+    {
+      "matchId": "400021498",
+      "kickoffBjt": "2026-06-17 12:00:00",
+      "match": "AUT 3-1 JOR",
+      "venue": "San Francisco Bay Area Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "played": 1,
+      "gf": 3,
+      "ga": 0,
+      "gd": 3,
+      "points": 3
+    },
+    {
+      "code": "AUT",
+      "name": "Austria",
+      "played": 1,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "JOR",
+      "name": "Jordan",
+      "played": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "points": 0
+    },
+    {
+      "code": "ALG",
+      "name": "Algeria",
+      "played": 1,
+      "gf": 0,
+      "ga": 3,
+      "gd": -3,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021499",
+    "matchCode": "JOR-ALG",
+    "title": "约旦 vs 阿尔及利亚",
+    "localHtml": "约旦vs阿尔及利亚赛前24小时补发报告.html",
+    "localJson": "jordan_algeria_prematch_snapshot.json",
+    "publicTarget": "jordan-algeria-prematch.html",
+    "scheduledPushBjt": "2026-06-22 11:00:00",
+    "pick": "约旦 1-2 阿尔及利亚",
+    "confidence": "中",
+    "probabilities": {
+      "home": 19,
+      "draw": 24,
+      "away": 57
+    },
+    "marketNormalized": {
+      "home": 17,
+      "draw": 25,
+      "away": 58
+    },
+    "xg": {
+      "home": 0.92,
+      "away": 1.72
+    },
+    "thesis": "两队首轮都输球，约旦 1-3 奥地利，阿尔及利亚 0-3 阿根廷。市场给阿尔及利亚约 58-65% 胜率，模型略保守到 57%，因为约旦的 3-4-2-1 可以拖节奏，但 Algeria 的 Mahrez、Gouiri、Ait-Nouri 和中场推进质量更高。",
+    "lineups": {
+      "home": {
+        "shape": "3-4-2-1",
+        "players": "Abulaila; Abualnadi, Al-Arab, Nasib; Haddad, Al Rashdan, Al Rawabdeh, Abu Taha; Olwan, Fakhoury; Al Tamari",
+        "injury": "无关键伤停"
+      },
+      "away": {
+        "shape": "3-4-2-1",
+        "players": "L. Zidane; Bensebaini, Mandi, Belaid; Belghali, Boudaoui, Zerrouki, Ait-Nouri; Mahrez, Gouiri, Maza",
+        "injury": "无关键伤停"
+      }
+    },
+    "tactics": [
+      "约旦会压缩中路，把 Al Tamari 留作反击第一出口。",
+      "阿尔及利亚三中卫能释放 Ait-Nouri 前插，左路传中和倒三角是主攻方向。",
+      "Mahrez 内收后与 Gouiri/Maza 的小范围配合，是破密防关键。"
+    ],
+    "risks": [
+      "阿尔及利亚若延续对阿根廷时的低效，比赛会被拖成 0-0/1-1。",
+      "约旦定位球和 Tamari 单点突破足以制造冷门进球。"
+    ],
+    "scores": [
+      [
+        "1-2",
+        16
+      ],
+      [
+        "0-2",
+        14
+      ],
+      [
+        "0-1",
+        12
+      ],
+      [
+        "1-1",
+        11
+      ],
+      [
+        "1-3",
+        9
+      ],
+      [
+        "0-0",
+        6
+      ],
+      [
+        "2-1",
+        5
+      ]
+    ],
+    "weather": "官方赛程显示 San Francisco Bay Area Stadium；湾区晚间条件通常比内陆温和，天气权重低于阵地战效率。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021499"
+      ],
+      [
+        "RotoWire 约旦 vs 阿尔及利亚",
+        "https://www.rotowire.com/soccer/article/jordan-vs-algeria-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-119061"
+      ],
+      [
+        "Covers 约旦 vs 阿尔及利亚",
+        "https://www.covers.com/world-cup/jordan-vs-algeria-prediction-picks-odds-monday-6-22-2026"
+      ],
+      [
+        "SportsGambler 赔率",
+        "https://www.sportsgambler.com/betting-tips/football/jordan-vs-algeria-prediction-lineups-odds-2026-06-22/"
+      ],
+      [
+        "SB Nation Group J 情景",
+        "https://www.sbnation.com/fifa-world-cup/1119405/world-cup-2026-scenarios-argentina-messi"
+      ]
+    ]
+  }
+}

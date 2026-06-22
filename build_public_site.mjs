@@ -6,6 +6,38 @@ const docs = path.join(root, "docs");
 
 const pages = [
   {
+    title: "阿根廷 vs 奥地利补发报告",
+    subtitle: "错过赛前24小时窗口后的单场预测补发",
+    source: "阿根廷vs奥地利赛前24小时补发报告.html",
+    target: "argentina-austria-prematch.html",
+    tag: "Backfill",
+    tone: "teal"
+  },
+  {
+    title: "法国 vs 伊拉克补发报告",
+    subtitle: "错过赛前24小时窗口后的单场预测补发",
+    source: "法国vs伊拉克赛前24小时补发报告.html",
+    target: "france-iraq-prematch.html",
+    tag: "Backfill",
+    tone: "blue"
+  },
+  {
+    title: "挪威 vs 塞内加尔补发报告",
+    subtitle: "错过赛前24小时窗口后的单场预测补发",
+    source: "挪威vs塞内加尔赛前24小时补发报告.html",
+    target: "norway-senegal-prematch.html",
+    tag: "Backfill",
+    tone: "magenta"
+  },
+  {
+    title: "约旦 vs 阿尔及利亚补发报告",
+    subtitle: "错过赛前24小时窗口后的单场预测补发",
+    source: "约旦vs阿尔及利亚赛前24小时补发报告.html",
+    target: "jordan-algeria-prematch.html",
+    tag: "Backfill",
+    tone: "orange"
+  },
+  {
     title: "今日四场赛前预测包",
     subtitle: "西班牙-沙特、比利时-伊朗、乌拉圭-佛得角、新西兰-埃及",
     source: "四场世界杯赛前预测包.html",
@@ -40,6 +72,10 @@ const pages = [
 ];
 
 const assets = [
+  ["argentina_austria_prematch_snapshot.json", "data/argentina_austria_prematch_snapshot.json"],
+  ["france_iraq_prematch_snapshot.json", "data/france_iraq_prematch_snapshot.json"],
+  ["norway_senegal_prematch_snapshot.json", "data/norway_senegal_prematch_snapshot.json"],
+  ["jordan_algeria_prematch_snapshot.json", "data/jordan_algeria_prematch_snapshot.json"],
   ["four_match_prediction_pack.json", "data/four_match_prediction_pack.json"],
   ["worldcup_remaining_push_plan.json", "data/worldcup_remaining_push_plan.json"],
   ["worldcup_progress_cutoff_20260620_0000_bjt.json", "data/worldcup_progress_cutoff_20260620_0000_bjt.json"],

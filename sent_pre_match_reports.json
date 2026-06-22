@@ -1,36 +1,4 @@
 {
-  "400021477": {
-    "matchId": "400021477",
-    "match": "BEL-IRN",
-    "kickoffBjt": "2026-06-22 03:00",
-    "reportPath": "四场世界杯赛前预测包.html",
-    "pushedAtBjt": "2026-06-22 00:28",
-    "mode": "manual-four-match-pack"
-  },
-  "400021480": {
-    "matchId": "400021480",
-    "match": "NZL-EGY",
-    "kickoffBjt": "2026-06-22 09:00",
-    "reportPath": "四场世界杯赛前预测包.html",
-    "pushedAtBjt": "2026-06-22 00:28",
-    "mode": "manual-four-match-pack"
-  },
-  "400021483": {
-    "matchId": "400021483",
-    "match": "ESP-KSA",
-    "kickoffBjt": "2026-06-22 00:00",
-    "reportPath": "四场世界杯赛前预测包.html",
-    "pushedAtBjt": "2026-06-22 00:28",
-    "mode": "manual-four-match-pack"
-  },
-  "400021487": {
-    "matchId": "400021487",
-    "match": "URU-CPV",
-    "kickoffBjt": "2026-06-22 06:00",
-    "reportPath": "四场世界杯赛前预测包.html",
-    "pushedAtBjt": "2026-06-22 00:28",
-    "mode": "manual-four-match-pack"
-  },
   "reports": [
     {
       "matchId": "400021477",
@@ -63,6 +31,46 @@
       "reportPath": "四场世界杯赛前预测包.html",
       "pushedAtBjt": "2026-06-21 22:08",
       "mode": "manual-four-match-pack"
+    },
+    {
+      "matchId": "400021492",
+      "match": "FRA-IRQ",
+      "kickoffBjt": "2026-06-23 05:00:00",
+      "reportPath": "法国vs伊拉克赛前24小时补发报告.html",
+      "dataPath": "france_iraq_prematch_snapshot.json",
+      "pushedAtBjt": "2026-06-22 22:13:27",
+      "scheduledPushBjt": "2026-06-22 05:00:00",
+      "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021491",
+      "match": "NOR-SEN",
+      "kickoffBjt": "2026-06-23 08:00:00",
+      "reportPath": "挪威vs塞内加尔赛前24小时补发报告.html",
+      "dataPath": "norway_senegal_prematch_snapshot.json",
+      "pushedAtBjt": "2026-06-22 22:13:27",
+      "scheduledPushBjt": "2026-06-22 08:00:00",
+      "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021499",
+      "match": "JOR-ALG",
+      "kickoffBjt": "2026-06-23 11:00:00",
+      "reportPath": "约旦vs阿尔及利亚赛前24小时补发报告.html",
+      "dataPath": "jordan_algeria_prematch_snapshot.json",
+      "pushedAtBjt": "2026-06-22 22:13:27",
+      "scheduledPushBjt": "2026-06-22 11:00:00",
+      "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021494",
+      "match": "ARG-AUT",
+      "kickoffBjt": "2026-06-23 01:00:00",
+      "reportPath": "阿根廷vs奥地利赛前24小时补发报告.html",
+      "dataPath": "argentina_austria_prematch_snapshot.json",
+      "pushedAtBjt": "2026-06-22 22:13:25",
+      "scheduledPushBjt": "2026-06-22 01:00:00",
+      "mode": "backfill-missed-24h-window"
     }
   ]
 }
