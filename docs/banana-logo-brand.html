@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>香蕉品牌 Logo 与视觉识别方案</title>
+  <style>
+    :root {
+      --ink: #15130f;
+      --muted: #6b6255;
+      --paper: #fff9e8;
+      --sun: #ffd43b;
+      --gold: #f4a000;
+      --leaf: #1f7a4d;
+      --forest: #123928;
+      --cocoa: #4b3324;
+      --cream: #fff2bd;
+      --line: rgba(21, 19, 15, .12);
+      --shadow: 0 22px 60px rgba(54, 40, 0, .14);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff4c7;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 0 90px rgba(69, 51, 0, .12);
+    }
+
+    section {
+      position: relative;
+      padding: 72px clamp(24px, 6vw, 84px);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 900px;
+      margin: 18px 0;
+      font-size: clamp(42px, 7vw, 88px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: clamp(30px, 4.2vw, 56px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    h3 { margin-bottom: 10px; font-size: 21px; line-height: 1.2; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--forest);
+      background: rgba(255,255,255,.68);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: #454034;
+      font-size: clamp(17px, 2.1vw, 23px);
+    }
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(255, 247, 205, .98), rgba(255, 217, 66, .88) 48%, rgba(31, 122, 77, .9));
+    }
+
+    .hero:after {
+      content: "";
+      position: absolute;
+      right: -12%;
+      bottom: -18%;
+      width: min(660px, 70vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 45% 45%, rgba(255,255,255,.7) 0 7%, transparent 8%),
+        conic-gradient(from 210deg, transparent 0 20deg, #fff176 21deg 76deg, #f7b500 77deg 116deg, transparent 117deg),
+        conic-gradient(from 28deg, transparent 0 18deg, #226f45 19deg 82deg, transparent 83deg);
+      filter: drop-shadow(0 28px 45px rgba(60, 44, 0, .24));
+      transform: rotate(-18deg);
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr .95fr;
+      gap: 24px;
+      align-items: end;
+      margin-top: 54px;
+    }
+
+    .brief {
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,.56);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.68);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .brief-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .brief-item {
+      padding: 14px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .brief-item b { display: block; color: var(--forest); }
+
+    .system-card {
+      padding: 24px;
+      border-radius: var(--radius);
+      color: #fffbe8;
+      background: rgba(18, 57, 40, .94);
+      box-shadow: var(--shadow);
+    }
+
+    .system-card .big { font-size: 44px; line-height: 1; color: var(--sun); font-weight: 900; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+    .logo-card {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 520px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 14px 36px rgba(54, 40, 0, .08);
+    }
+
+    .logo-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .tag {
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: var(--forest);
+      background: var(--cream);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .mark-stage {
+      display: grid;
+      place-items: center;
+      min-height: 220px;
+      margin-bottom: 16px;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, #fffdf4, #fff3bc);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .mark-stage.dark {
+      color: #fff;
+      background: linear-gradient(145deg, #123928, #1f7a4d);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .brand-lockup svg { width: 86px; height: 86px; flex: 0 0 auto; }
+    .brand-name { font-size: 28px; font-weight: 900; line-height: 1.05; }
+    .brand-en { margin-top: 4px; color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .12em; }
+    .dark .brand-en { color: rgba(255,255,255,.72); }
+
+    .logo-card p { color: #4d4537; }
+
+    .palette {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .swatch {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,.12);
+    }
+
+    .score {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .score span {
+      padding: 8px 9px;
+      border-radius: var(--radius);
+      background: #fff8d8;
+      color: #514632;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .recommend {
+      border: 2px solid var(--gold);
+      box-shadow: 0 22px 52px rgba(244, 160, 0, .2);
+    }
+
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .package {
+      position: relative;
+      min-height: 480px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #ffe564, #f9b400 52%, #1f7a4d);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .package .box {
+      position: absolute;
+      left: 9%;
+      top: 13%;
+      width: 52%;
+      height: 68%;
+      padding: 24px;
+      border-radius: 6px;
+      background: #fffdf3;
+      box-shadow: 26px 30px 0 rgba(18, 57, 40, .9);
+      transform: rotate(-4deg);
+    }
+
+    .package svg { width: 96px; height: 96px; color: var(--leaf); }
+    .package h3 { margin-top: 18px; font-size: 42px; color: var(--forest); }
+    .package .claim { position: absolute; right: 8%; bottom: 12%; width: 210px; padding: 18px; border-radius: var(--radius); color: #fff; background: rgba(18,57,40,.92); }
+
+    .touchpoints {
+      display: grid;
+      gap: 14px;
+    }
+
+    .touch {
+      min-height: 108px;
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .touch b { display: block; color: var(--forest); margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    th, td {
+      padding: 14px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #fff;
+      background: var(--forest);
+      font-size: 13px;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .rule-card {
+      padding: 18px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .rule-card b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--forest);
+      font-size: 20px;
+    }
+
+    .sources {
+      display: grid;
+      gap: 10px;
+      padding-left: 18px;
+      color: #403a2f;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 34px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 920px) {
+      section { padding: 52px 22px; }
+      .hero { min-height: auto; }
+      .hero-grid, .grid-2, .grid-3, .grid-4, .brief-grid, .mockup-grid {
+        grid-template-columns: 1fr;
+      }
+      .logo-card { min-height: auto; }
+      .brand-lockup { align-items: flex-start; }
+      .brand-name { font-size: 24px; }
+      .package .box { width: 70%; left: 7%; }
+      .package .claim { right: 5%; bottom: 7%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">Brand Identity · Logo System</span>
+        <h1>香蕉品牌 Logo 与视觉识别方案</h1>
+        <p class="lead">为普陀样板项目准备的专业品牌标识方向。以下方案均为可缩放 SVG，适合包装、小程序、社区试吃台、单位福利箱和运动补给场景。</p>
+        <div class="hero-grid">
+          <div class="brief">
+            <h3>设计任务</h3>
+            <p>品牌需要同时解决三个感知：香蕉要新鲜、渠道要可信、价格不能显得遥远。因此 Logo 不走奢侈品路线，而走“清爽、专业、可亲近”的城市鲜果品牌路线。</p>
+            <div class="brief-grid">
+              <div class="brief-item"><b>产品</b><span>高品质分装香蕉</span></div>
+              <div class="brief-item"><b>渠道</b><span>普陀社区/政企/单位福利</span></div>
+              <div class="brief-item"><b>气质</b><span>健康、可信、明亮、日常</span></div>
+            </div>
+          </div>
+          <div class="system-card">
+            <div class="big">6</div>
+            <h3>个品牌 Logo 方向</h3>
+            <p>参考 GitHub 的 logo-generator-skill 方法：多方向 SVG 概念、设计理由、适用场景、品牌展示页，而不是只给一张孤立图。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">Recommendation</span>
+      <h2>推荐主方向：米旭蕉选</h2>
+      <div class="mockup-grid">
+        <div class="package">
+          <div class="box">
+            <svg viewBox="0 0 100 100" aria-label="米旭蕉选推荐标识">
+              <defs>
+                <linearGradient id="g-main" x1="20" y1="20" x2="80" y2="80">
+                  <stop offset="0" stop-color="#FFE66D"/>
+                  <stop offset="1" stop-color="#F4A000"/>
+                </linearGradient>
+              </defs>
+              <path d="M25 60C34 77 63 80 78 54C59 64 42 58 32 39C28 44 25 51 25 60Z" fill="url(#g-main)"/>
+              <path d="M25 60C36 66 52 65 66 55" fill="none" stroke="#123928" stroke-width="5" stroke-linecap="round"/>
+              <path d="M65 28C72 29 78 34 82 42C73 39 66 40 60 46C59 38 61 32 65 28Z" fill="#1f7a4d"/>
+              <circle cx="35" cy="39" r="4" fill="#123928"/>
+            </svg>
+            <h3>米旭蕉选</h3>
+            <p>MI XU BANANA SELECT</p>
+          </div>
+          <div class="claim">推荐用于首发包装：明亮、友好、有品质感，最适合社区与单位福利场景。</div>
+        </div>
+        <div class="touchpoints">
+          <div class="touch"><b>为什么推荐它</b><span>“米旭”承接平台主体，“蕉选”明确品类和精选感，名字直接、可信、容易落地。</span></div>
+          <div class="touch"><b>视觉关键词</b><span>一根香蕉 + 一片叶 + 太阳光感，既有源头农业感，也有城市鲜果品牌感。</span></div>
+          <div class="touch"><b>适用场景</b><span>3 根装、5 根装、单位福利箱、小程序头像、社区试吃台、运动活动补给贴。</span></div>
+          <div class="touch"><b>后续可延展</b><span>可发展“米旭蕉选·每日装”“米旭蕉选·福利箱”“米旭蕉选·熟度 3/5/7”。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">Logo Concepts</span>
+      <h2>六个 Logo 方向</h2>
+      <div class="grid-2">
+        <article class="logo-card recommend">
+          <div class="logo-top"><h3>01 米旭蕉选</h3><span class="tag">首推</span></div>
+          <div class="mark-stage">
+            <div class="brand-lockup">
+              <svg viewBox="0 0 100 100">
+                <path d="M25 60C34 77 63 80 78 54C59 64 42 58 32 39C28 44 25 51 25 60Z" fill="#FFD43B"/>
+                <path d="M25 60C36 66 52 65 66 55" fill="none" stroke="#123928" stroke-width="5" stroke-linecap="round"/>
+                <path d="M65 28C72 29 78 34 82 42C73 39 66 40 60 46C59 38 61 32 65 28Z" fill="#1F7A4D"/>
+                <circle cx="35" cy="39" r="4" fill="#123928"/>
+              </svg>
+              <div><div class="brand-name">米旭蕉选</div><div class="brand-en">MI XU BANANA SELECT</div></div>
+            </div>
+          </div>
+          <p>最稳妥的商业化方向。香蕉弧线代表“新鲜可口”，叶片代表源头，深绿线条压住专业感，不会显得幼稚。</p>
+          <div class="score"><span>亲和度 高</span><span>包装适配 高</span><span>注册弹性 中</span></div>
+          <div class="palette"><i class="swatch" style="background:#FFD43B"></i><i class="swatch" style="background:#1F7A4D"></i><i class="swatch" style="background:#123928"></i><i class="swatch" style="background:#FFF9E8"></i></div>
+        </article>
+
+        <article class="logo-card">
+          <div class="logo-top"><h3>02 每日好蕉</h3><span class="tag">大众亲民</span></div>
+          <div class="mark-stage">
+            <div class="brand-lockup">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="33" fill="#FFE66D"/>
+                <path d="M28 58C42 75 67 68 74 41C57 54 42 51 34 36C27 42 25 50 28 58Z" fill="#F4A000"/>
+                <path d="M38 32C44 28 52 26 61 29" fill="none" stroke="#123928" stroke-width="5" stroke-linecap="round"/>
+                <path d="M33 64C45 65 55 62 65 55" fill="none" stroke="#123928" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+              <div><div class="brand-name">每日好蕉</div><div class="brand-en">DAILY GOOD BANANA</div></div>
+            </div>
+          </div>
+          <p>口语化、好传播，适合社区首发和家庭复购。弱点是名字偏营销，需要商标检索确认近似风险。</p>
+          <div class="score"><span>传播 高</span><span>高级感 中</span><span>社区适配 高</span></div>
+          <div class="palette"><i class="swatch" style="background:#FFE66D"></i><i class="swatch" style="background:#F4A000"></i><i class="swatch" style="background:#123928"></i><i class="swatch" style="background:#FFFFFF"></i></div>
+        </article>
+
+        <article class="logo-card">
+          <div class="logo-top"><h3>03 蕉点 Fresh</h3><span class="tag">活动传播</span></div>
+          <div class="mark-stage dark">
+            <div class="brand-lockup">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="4"/>
+                <path d="M26 59C38 73 62 73 75 43C56 57 43 55 34 39C28 45 25 52 26 59Z" fill="#FFD43B"/>
+                <circle cx="50" cy="50" r="7" fill="currentColor"/>
+                <path d="M65 25L74 36L59 38Z" fill="#9BE08E"/>
+              </svg>
+              <div><div class="brand-name">蕉点 Fresh</div><div class="brand-en">THE FRESH FOCUS</div></div>
+            </div>
+          </div>
+          <p>把“焦点/蕉点”做成传播梗，适合快闪活动、运动补给、年轻社群。品牌语可用“今天的健康蕉点”。</p>
+          <div class="score"><span>记忆点 高</span><span>年轻感 高</span><span>稳重感 中</span></div>
+          <div class="palette"><i class="swatch" style="background:#123928"></i><i class="swatch" style="background:#FFD43B"></i><i class="swatch" style="background:#9BE08E"></i><i class="swatch" style="background:#FFFFFF"></i></div>
+        </article>
+
+        <article class="logo-card">
+          <div class="logo-top"><h3>04 BANA MI</h3><span class="tag">国际化</span></div>
+          <div class="mark-stage">
+            <div class="brand-lockup">
+              <svg viewBox="0 0 100 100">
+                <rect x="18" y="18" width="64" height="64" rx="18" fill="#123928"/>
+                <path d="M28 59C39 76 63 75 75 43C59 56 43 54 34 36C28 43 25 51 28 59Z" fill="#FFD43B"/>
+                <path d="M39 65C50 66 61 60 68 51" fill="none" stroke="#FFF9E8" stroke-width="4" stroke-linecap="round"/>
+                <path d="M64 29C70 30 75 34 78 40C70 38 64 39 59 44C58 38 60 32 64 29Z" fill="#9BE08E"/>
+              </svg>
+              <div><div class="brand-name">BANA MI</div><div class="brand-en">米旭香蕉精选</div></div>
+            </div>
+          </div>
+          <p>适合未来讲国际化故事。英文更简洁，包装上有进口感；中文副标保留“米旭香蕉精选”承接信任。</p>
+          <div class="score"><span>国际感 高</span><span>本地信任 中</span><span>包装感 高</span></div>
+          <div class="palette"><i class="swatch" style="background:#123928"></i><i class="swatch" style="background:#FFD43B"></i><i class="swatch" style="background:#9BE08E"></i><i class="swatch" style="background:#FFF9E8"></i></div>
+        </article>
+
+        <article class="logo-card">
+          <div class="logo-top"><h3>05 城市蕉仓</h3><span class="tag">供应链感</span></div>
+          <div class="mark-stage">
+            <div class="brand-lockup">
+              <svg viewBox="0 0 100 100">
+                <path d="M18 72V36L50 20L82 36V72Z" fill="none" stroke="#123928" stroke-width="5" stroke-linejoin="round"/>
+                <path d="M31 57C41 70 61 68 70 43C55 54 43 52 36 39C31 44 29 51 31 57Z" fill="#FFD43B"/>
+                <path d="M50 20V39" stroke="#123928" stroke-width="5" stroke-linecap="round"/>
+                <path d="M29 72H72" stroke="#1F7A4D" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+              <div><div class="brand-name">城市蕉仓</div><div class="brand-en">CITY BANANA HUB</div></div>
+            </div>
+          </div>
+          <p>更偏 B2B 和仓配能力，适合单位福利、食材配送、社区食堂，不如前几款亲民，但更能表达履约专业。</p>
+          <div class="score"><span>B2B 高</span><span>亲和度 中</span><span>可信度 高</span></div>
+          <div class="palette"><i class="swatch" style="background:#123928"></i><i class="swatch" style="background:#1F7A4D"></i><i class="swatch" style="background:#FFD43B"></i><i class="swatch" style="background:#F5F0E5"></i></div>
+        </article>
+
+        <article class="logo-card">
+          <div class="logo-top"><h3>06 蕉语</h3><span class="tag">内容种草</span></div>
+          <div class="mark-stage">
+            <div class="brand-lockup">
+              <svg viewBox="0 0 100 100">
+                <path d="M23 33C23 24 30 18 39 18H61C73 18 81 26 81 38V50C81 62 73 70 61 70H46L30 82V70H39C30 70 23 63 23 54Z" fill="#FFF2BD" stroke="#123928" stroke-width="5" stroke-linejoin="round"/>
+                <path d="M34 53C44 64 61 62 68 39C56 49 45 47 39 36C34 41 32 48 34 53Z" fill="#FFD43B"/>
+                <circle cx="43" cy="43" r="3" fill="#123928"/>
+                <circle cx="56" cy="43" r="3" fill="#123928"/>
+              </svg>
+              <div><div class="brand-name">蕉语</div><div class="brand-en">BANANA TALKS</div></div>
+            </div>
+          </div>
+          <p>适合小红书、亲子、内容传播，语气温柔有记忆点。若品牌主打社区长者与单位福利，建议作为内容栏目名而非主品牌。</p>
+          <div class="score"><span>内容感 高</span><span>主品牌 中</span><span>社交传播 高</span></div>
+          <div class="palette"><i class="swatch" style="background:#FFF2BD"></i><i class="swatch" style="background:#FFD43B"></i><i class="swatch" style="background:#123928"></i><i class="swatch" style="background:#FFFFFF"></i></div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">Brand System</span>
+      <h2>品牌视觉规范建议</h2>
+      <div class="grid-4">
+        <div class="rule-card"><b>主色</b><p>香蕉黄 #FFD43B，用于包装大面积识别和活动物料。</p></div>
+        <div class="rule-card"><b>信任色</b><p>深叶绿 #123928，用于 Logo 线条、标题、食品安全说明。</p></div>
+        <div class="rule-card"><b>辅助色</b><p>鲜叶绿 #1F7A4D，用于源头、健康、成熟度分级。</p></div>
+        <div class="rule-card"><b>底色</b><p>米白 #FFF9E8，让包装不廉价，也避免过度刺眼。</p></div>
+      </div>
+      <div class="grid-2" style="margin-top:22px">
+        <table>
+          <tr><th>应用场景</th><th>建议用法</th></tr>
+          <tr><td>3 根装 / 5 根装</td><td>大面积香蕉黄 + 深绿 Logo，正面保留成熟度标签。</td></tr>
+          <tr><td>单位福利箱</td><td>深绿箱贴 + 黄色封签，突出“源头精选 / 城市鲜配”。</td></tr>
+          <tr><td>社区试吃台</td><td>使用“米旭蕉选”主标，辅助口号“每天都吃得起的好香蕉”。</td></tr>
+          <tr><td>小程序头像</td><td>只使用图形标，不放过小文字；保证 32px 仍能看清。</td></tr>
+        </table>
+        <table>
+          <tr><th>品牌口径</th><th>推荐表达</th></tr>
+          <tr><td>品牌主张</td><td>每天都吃得起的好香蕉。</td></tr>
+          <tr><td>品质表达</td><td>源头精选、熟度管理、城市鲜配。</td></tr>
+          <tr><td>普陀样板</td><td>从社区到单位，把好香蕉送到日常生活里。</td></tr>
+          <tr><td>不建议表达</td><td>不要过度喊“高端”“进口感”，避免价格预期被抬高。</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <span class="eyebrow">Decision</span>
+      <h2>推荐决策路径</h2>
+      <div class="grid-3">
+        <div class="rule-card"><b>第一步</b><p>从 01“米旭蕉选”和 02“每日好蕉”中选一个主品牌方向，另一个作为活动话术或系列名。</p></div>
+        <div class="rule-card"><b>第二步</b><p>做商标近似检索，重点查第 31 类生鲜水果、第 35 类销售服务、第 29/32 类后续衍生品。</p></div>
+        <div class="rule-card"><b>第三步</b><p>用首推 Logo 做 3 根装、福利箱、试吃台物料和小程序头像，先进入普陀试点验证。</p></div>
+      </div>
+      <div class="footer"><span>Logo 方案为 SVG 概念稿，可进一步精修为商标注册稿</span><span>版本：2026-06-23</span></div>
+    </section>
+
+    <section>
+      <span class="eyebrow">Skill Reference</span>
+      <h2>使用的设计方法参考</h2>
+      <ol class="sources">
+        <li>GitHub：op7418/logo-generator-skill。该 skill 建议生成 6 个以上不同 SVG 方向、展示设计理由、制作交互式展示页，并确保 Logo 可缩放、可用于不同背景。</li>
+        <li>本项目商业计划书：香蕉大单品品牌化、普陀社区/政企样板、米旭点渠道与仓配承接。</li>
+        <li>品牌设计原则：先保证小尺寸识别、包装适配、渠道信任和商标延展，再追求复杂视觉效果。</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
