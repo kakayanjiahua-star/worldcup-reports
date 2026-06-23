@@ -420,6 +420,74 @@
       font-weight: 800;
     }
 
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .scene-card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .scene-card .scene-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-weight: 900;
+      color: var(--moss);
+    }
+
+    .scene-card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: #494337;
+    }
+
+    .metric-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .metric {
+      min-height: 104px;
+      padding: 15px;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--moss);
+    }
+
+    .metric:nth-child(even) { background: var(--leaf); }
+    .metric b { display: block; margin-bottom: 8px; color: var(--sun); font-size: 24px; line-height: 1; }
+
+    .week-board {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .week {
+      padding: 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.72);
+    }
+
+    .week b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--amber);
+      font-size: 22px;
+    }
+
     .packshot {
       position: relative;
       min-height: 420px;
@@ -487,7 +555,7 @@
 
     @media (max-width: 900px) {
       .page { min-height: auto; padding: 52px 22px; }
-      .hero-grid, .split, .grid-2, .grid-3, .grid-4, .toc, .flow, .timeline, .risk-grid {
+      .hero-grid, .split, .grid-2, .grid-3, .grid-4, .toc, .flow, .timeline, .risk-grid, .scenario-grid, .metric-strip, .week-board {
         grid-template-columns: 1fr;
       }
       .signature { max-width: 420px; }
@@ -550,11 +618,12 @@
         <a href="#answer"><span>01</span><b>Serena 最关心的问题</b></a>
         <a href="#market"><span>02</span><b>市场与机会判断</b></a>
         <a href="#model"><span>03</span><b>商业模式与渠道打法</b></a>
-        <a href="#structure"><span>04</span><b>股权与合作架构</b></a>
-        <a href="#product"><span>05</span><b>产品与品牌视觉</b></a>
-        <a href="#finance"><span>06</span><b>成本、定价与财务模型</b></a>
-        <a href="#roadmap"><span>07</span><b>90 天落地计划</b></a>
-        <a href="#risk"><span>08</span><b>风险与待确认事项</b></a>
+        <a href="#putuo"><span>04</span><b>普陀样板打法</b></a>
+        <a href="#structure"><span>05</span><b>股权与合作架构</b></a>
+        <a href="#product"><span>06</span><b>产品与品牌视觉</b></a>
+        <a href="#finance"><span>07</span><b>成本、定价与财务模型</b></a>
+        <a href="#roadmap"><span>08</span><b>90 天落地计划</b></a>
+        <a href="#risk"><span>09</span><b>风险与待确认事项</b></a>
       </div>
       <div class="footer"><span>内部讨论稿</span><span>基于 2026-06-23 会议材料整理</span></div>
     </section>
@@ -685,6 +754,105 @@
           <p>精品商超、内容电商、小红书种草。等包装、口碑和供应稳定后再进入。</p>
         </div>
       </div>
+    </section>
+
+    <section class="page" id="putuo">
+      <span class="eyebrow">Putuo Pilot</span>
+      <h2>普陀样板：先把一个城区跑透</h2>
+      <div class="grid-4">
+        <div class="kpi">
+          <div class="label">普陀常住人口</div>
+          <div class="value">约125万</div>
+          <p class="small">人口密度和社区触点足够支撑区域试点。</p>
+        </div>
+        <div class="kpi">
+          <div class="label">社区长者食堂/助餐点</div>
+          <div class="value">多街镇覆盖</div>
+          <p class="small">可作为高频、稳定、可观察的试吃和福利触点。</p>
+        </div>
+        <div class="kpi">
+          <div class="label">半马苏河场景</div>
+          <div class="value">运动生活</div>
+          <p class="small">适合“健康补给 + 城市活动”品牌露出。</p>
+        </div>
+        <div class="kpi">
+          <div class="label">首发半径</div>
+          <div class="value">3-5km</div>
+          <p class="small">先控制仓配和成熟度，再扩大覆盖。</p>
+        </div>
+      </div>
+
+      <div class="scenario-grid" style="margin-top:26px">
+        <div>
+          <h3>首发区域建议：长征镇 + 长寿路 + 长风 + 曹杨</h3>
+          <p>首发不要一开始铺满全区，而是选“资源熟、点位密、活动多、配送半径可控”的组合。长征镇适合作为政企和广告资源起点；长寿路、曹杨、长风有成熟社区生活场景；半马苏河沿线适合品牌曝光和运动补给故事。</p>
+          <div class="note">
+            <p><b>样板定义：</b>不是卖出一批香蕉，而是证明“活动获客 - 小程序下单 - 仓配履约 - 复购 - 单箱毛利”这条链路能稳定跑通。</p>
+          </div>
+        </div>
+        <div class="bar-chart">
+          <h3>样板点位优先级</h3>
+          <div class="bar"><span>单位福利</span><div class="track"><span class="fill" style="width:92%"></span></div><b>首选</b></div>
+          <div class="bar"><span>社区食堂</span><div class="track"><span class="fill" style="width:86%"></span></div><b>高频</b></div>
+          <div class="bar"><span>体育活动</span><div class="track"><span class="fill" style="width:78%"></span></div><b>曝光</b></div>
+          <div class="bar"><span>学校周边</span><div class="track"><span class="fill" style="width:65%"></span></div><b>谨慎</b></div>
+          <div class="bar"><span>商圈快闪</span><div class="track"><span class="fill" style="width:58%"></span></div><b>后置</b></div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:22px">
+        <div class="scene-card">
+          <div class="scene-title"><span>场景 A</span><span>社区长者食堂</span></div>
+          <p>用“餐后水果/下午加餐”切入，做小规格、软熟度更高的产品。</p>
+          <ul>
+            <li>试吃台 + 食品安全说明</li>
+            <li>3 根装首购券</li>
+            <li>子女代下单/周配</li>
+          </ul>
+        </div>
+        <div class="scene-card">
+          <div class="scene-title"><span>场景 B</span><span>单位福利</span></div>
+          <p>把香蕉作为“高频健康福利”，用预售和批量交付降低损耗。</p>
+          <ul>
+            <li>20/50/100 份阶梯报价</li>
+            <li>周五办公室补给</li>
+            <li>企业团购专属码</li>
+          </ul>
+        </div>
+        <div class="scene-card">
+          <div class="scene-title"><span>场景 C</span><span>半马苏河活动</span></div>
+          <p>用运动补给建立“健康、能量、城市生活”的品牌心智。</p>
+          <ul>
+            <li>赛事补给赞助</li>
+            <li>跑团/亲子活动试吃</li>
+            <li>打卡领券复购</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flow" style="margin-top:24px">
+        <div class="step"><b>1. 点位确认</b><p>锁定 10 个候选点，优先选 3 个资源最熟的点。</p></div>
+        <div class="step"><b>2. 活动预热</b><p>居委/单位群海报，明确试吃时间和首购权益。</p></div>
+        <div class="step"><b>3. 现场转化</b><p>试吃、扫码、领取首购券，记录点位和渠道码。</p></div>
+        <div class="step"><b>4. 次日履约</b><p>按订单分装配送，记录破损、熟度、退货原因。</p></div>
+        <div class="step"><b>5. 七日复购</b><p>第 3 天提醒，第 7 天复购券，第 14 天单位团购。</p></div>
+      </div>
+
+      <div class="metric-strip">
+        <div class="metric"><b>30%</b><span>试吃转扫码目标</span></div>
+        <div class="metric"><b>12%</b><span>扫码到首购目标</span></div>
+        <div class="metric"><b>&lt;8%</b><span>综合损耗红线</span></div>
+        <div class="metric"><b>25%</b><span>14 天复购目标</span></div>
+        <div class="metric"><b>48h</b><span>从到仓到售完周期</span></div>
+      </div>
+
+      <div class="week-board">
+        <div class="week"><b>第1周</b><p>确认点位、样品、价格、食品安全预案和渠道码。</p></div>
+        <div class="week"><b>第2周</b><p>完成 2 场社区试吃 + 1 个单位福利小单。</p></div>
+        <div class="week"><b>第3周</b><p>复盘转化率、损耗率、退货原因，调整 SKU 和熟度。</p></div>
+        <div class="week"><b>第4周</b><p>扩大到 5-8 个点位，形成普陀样板周报。</p></div>
+      </div>
+      <p class="small" style="margin-top:16px">普陀公开信息参考：普陀区政府社区长者食堂/助餐点清单、半马苏河体育生活场景、普陀人口统计公开资料。具体点位须以实际合作审批和现场踏勘为准。</p>
     </section>
 
     <section class="page" id="structure">
@@ -855,6 +1023,7 @@
         <li>USDA FAS，《Retail Foods Annual》，2025：中国 2024 年零售总额约 6.8 万亿美元，同比增长 3.5%，消费呈价值导向。</li>
         <li>HKUST，《China’s Community Group Buying Market Report》：社区团购通过预售和按需采购降低库存压力、改善现金流、减少损耗。</li>
         <li>Our World in Data / FAO，《Banana production by region》：FAO 香蕉生产数据覆盖 1961-2024 年，作为全球品类背景参考。</li>
+        <li>上海普陀区政府公开信息：社区长者食堂/老年助餐点清单、半马苏河体育生活场景、卫生健康与人口相关公开数据。</li>
         <li>内部资料：2026-06-23《香蕉品牌合作与股权设计》《股权与运营框架设计》会议转写与纪要。</li>
       </ol>
       <div class="footer"><span>商业计划书 HTML 视觉稿</span><span>建议下一步：补入真实价格和试点数据后形成正式版</span></div>
