@@ -1,0 +1,174 @@
+{
+  "generatedAtBjt": "2026-06-23 16:18:00",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-23 07:00:00",
+  "match": {
+    "matchId": "400021511",
+    "matchCode": "PAN-CRO",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group L",
+    "kickoffUtc": "2026-06-23T23:00:00Z",
+    "kickoffBjt": "2026-06-24 07:00:00",
+    "venue": "Toronto Stadium",
+    "city": "Toronto",
+    "home": {
+      "code": "PAN",
+      "name": "Panama"
+    },
+    "away": {
+      "code": "CRO",
+      "name": "Croatia"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021507",
+      "kickoffBjt": "2026-06-18 04:00:00",
+      "match": "ENG 4-2 CRO",
+      "venue": "Dallas Stadium"
+    },
+    {
+      "matchId": "400021510",
+      "kickoffBjt": "2026-06-18 07:00:00",
+      "match": "GHA 1-0 PAN",
+      "venue": "Toronto Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "ENG",
+      "name": "England",
+      "played": 1,
+      "gf": 4,
+      "ga": 2,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "GHA",
+      "name": "Ghana",
+      "played": 1,
+      "gf": 1,
+      "ga": 0,
+      "gd": 1,
+      "points": 3
+    },
+    {
+      "code": "PAN",
+      "name": "Panama",
+      "played": 1,
+      "gf": 0,
+      "ga": 1,
+      "gd": -1,
+      "points": 0
+    },
+    {
+      "code": "CRO",
+      "name": "Croatia",
+      "played": 1,
+      "gf": 2,
+      "ga": 4,
+      "gd": -2,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021511",
+    "matchCode": "PAN-CRO",
+    "title": "巴拿马 vs 克罗地亚",
+    "localHtml": "巴拿马vs克罗地亚赛前24小时补发报告.html",
+    "localJson": "panama_croatia_prematch_snapshot.json",
+    "publicTarget": "panama-croatia-prematch.html",
+    "scheduledPushBjt": "2026-06-23 07:00:00",
+    "pick": "巴拿马 1-2 克罗地亚",
+    "confidence": "中",
+    "probabilities": {
+      "home": 20,
+      "draw": 24,
+      "away": 56
+    },
+    "marketNormalized": {
+      "home": 18,
+      "draw": 25,
+      "away": 57
+    },
+    "xg": {
+      "home": 0.97,
+      "away": 1.68
+    },
+    "thesis": "两队首轮都输球，已经接近必须取分。克罗地亚 2 比 4 负于英格兰，进攻效率尚可但防线转身速度被打穿；巴拿马则在长时间不落下风的情况下补时丢给加纳。市场仍把克罗地亚放在明显优势位，模型接受这个结论，但因为克罗地亚后场不稳，所以更偏向 2 比 1 而非大胜。",
+    "lineups": {
+      "home": {
+        "shape": "3-4-3",
+        "players": "Orlando Mosquera; Cesar Blackman, Jose Cordoba, Jiovany Ramos; Michael Amir Murillo, Carlos Harvey, Cristian Martinez, Andres Andrade; Yoel Barcenas, Cecilio Waterman, Jose Luis Rodriguez",
+        "injury": "Carrasquilla 腹股沟恢复期，RotoWire 认为本场缺席"
+      },
+      "away": {
+        "shape": "4-3-3",
+        "players": "Dominik Livakovic; Josip Stanisic, Josip Sutalo, Duje Caleta-Car, Josko Gvardiol; Mateo Kovacic, Luka Modric, Petar Sucic; Martin Baturina, Petar Musa, Ivan Perisic",
+        "injury": "无关键新增伤停"
+      }
+    },
+    "tactics": [
+      "Modric 的纵向调度是克罗地亚压制比赛的核心，Panama 需要 Harvey 和中前场协防去切断他向肋部的直塞。",
+      "Dalic 可能从首轮的更保守结构回到更典型的 4 后卫，释放 Perisic 专心参与终结与传中。",
+      "巴拿马会坚持 3-4-3 的紧凑防守，再用 Waterman、Rodriguez 的速度打克罗地亚中卫身后。",
+      "若 Panama 被迫过早压上，Gvardiol 和 Stanisic 的边后场推进会形成持续压制。"
+    ],
+    "risks": [
+      "克罗地亚首轮失 4 球暴露出退防慢，若再次被反击打身后，平局概率会迅速抬升。",
+      "Panama 定位球和第二落点强度不差，Toronto 的开放式场地也更容易放大偶发球。",
+      "如果 Carrasquilla 意外复出，Panama 中场的持球和推进能力会明显改善。"
+    ],
+    "scores": [
+      [
+        "1-2",
+        18
+      ],
+      [
+        "0-2",
+        14
+      ],
+      [
+        "1-1",
+        12
+      ],
+      [
+        "0-1",
+        11
+      ],
+      [
+        "1-3",
+        9
+      ],
+      [
+        "2-2",
+        6
+      ],
+      [
+        "2-1",
+        5
+      ]
+    ],
+    "weather": "Toronto 当地傍晚约 20C，风力不大且无明显降雨，属于对开放式场地较友好的天气；更关键的是比赛节奏和克罗地亚退防质量。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289274/400021511"
+      ],
+      [
+        "FIFA 官方赛程 API",
+        "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023"
+      ],
+      [
+        "RotoWire 赛前预览",
+        "https://www.rotowire.com/soccer/article/panama-vs-croatia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119188"
+      ],
+      [
+        "Covers 赔率/伤停/天气",
+        "https://www.covers.com/world-cup/croatia-vs-panama-prediction-picks-odds-tuesday-6-23-2026"
+      ]
+    ]
+  }
+}

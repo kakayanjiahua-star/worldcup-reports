@@ -3,8 +3,9 @@ import path from "node:path";
 
 const root = process.cwd();
 const docs = path.join(root, "docs");
+const sentReportsPath = path.join(root, "sent_pre_match_reports.json");
 
-const pages = [
+const staticPages = [
   {
     title: "阿根廷 vs 奥地利补发报告",
     subtitle: "错过赛前24小时窗口后的单场预测补发",
@@ -71,7 +72,7 @@ const pages = [
   }
 ];
 
-const assets = [
+const staticAssets = [
   ["argentina_austria_prematch_snapshot.json", "data/argentina_austria_prematch_snapshot.json"],
   ["france_iraq_prematch_snapshot.json", "data/france_iraq_prematch_snapshot.json"],
   ["norway_senegal_prematch_snapshot.json", "data/norway_senegal_prematch_snapshot.json"],
@@ -81,6 +82,59 @@ const assets = [
   ["worldcup_progress_cutoff_20260620_0000_bjt.json", "data/worldcup_progress_cutoff_20260620_0000_bjt.json"],
   ["nl_sweden_research_snapshot.json", "data/nl_sweden_research_snapshot.json"]
 ];
+
+const fallbackPublicTargets = new Map([
+  ["阿根廷vs奥地利赛前24小时补发报告.html", "argentina-austria-prematch.html"],
+  ["法国vs伊拉克赛前24小时补发报告.html", "france-iraq-prematch.html"],
+  ["挪威vs塞内加尔赛前24小时补发报告.html", "norway-senegal-prematch.html"],
+  ["约旦vs阿尔及利亚赛前24小时补发报告.html", "jordan-algeria-prematch.html"],
+  ["葡萄牙vs乌兹别克斯坦赛前24小时补发报告.html", "portugal-uzbekistan-prematch.html"],
+  ["英格兰vs加纳赛前24小时补发报告.html", "england-ghana-prematch.html"],
+  ["巴拿马vs克罗地亚赛前24小时补发报告.html", "panama-croatia-prematch.html"],
+  ["哥伦比亚vs刚果金赛前24小时补发报告.html", "colombia-drcongo-prematch.html"]
+]);
+
+function titleFromMatchCode(code) {
+  const [home = "", away = ""] = String(code || "").split("-");
+  return home && away ? `${home} vs ${away} 赛前补发报告` : "赛前补发报告";
+}
+
+function subtitleFromEntry(entry) {
+  const kickoff = entry.kickoffBjt ? `开球 ${entry.kickoffBjt} BJT` : "赛前 24 小时补发";
+  return `${entry.mode === "backfill-missed-24h-window" ? "错过 24 小时窗口后的单场预测补发" : "单场赛前预测"} · ${kickoff}`;
+}
+
+let sentState = { reports: [] };
+try {
+  sentState = JSON.parse(await fs.readFile(sentReportsPath, "utf8"));
+} catch {
+  sentState = { reports: [] };
+}
+
+const sentPages = [];
+const sentAssets = [];
+const seenTargets = new Set(staticPages.map((page) => page.target));
+
+for (const entry of Array.isArray(sentState.reports) ? sentState.reports : []) {
+  if (!entry?.reportPath || !String(entry.reportPath).endsWith(".html")) continue;
+  const target = entry.publicTarget ?? fallbackPublicTargets.get(entry.reportPath);
+  if (!target || seenTargets.has(target)) continue;
+  seenTargets.add(target);
+  sentPages.push({
+    title: entry.title ?? titleFromMatchCode(entry.match),
+    subtitle: subtitleFromEntry(entry),
+    source: entry.reportPath,
+    target,
+    tag: entry.mode === "backfill-missed-24h-window" ? "Backfill" : "Prediction",
+    tone: "teal"
+  });
+  if (entry.dataPath) {
+    sentAssets.push([entry.dataPath, `data/${path.basename(entry.dataPath)}`]);
+  }
+}
+
+const pages = [...sentPages, ...staticPages];
+const assets = [...sentAssets, ...staticAssets];
 
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({

@@ -1,0 +1,174 @@
+{
+  "generatedAtBjt": "2026-06-23 16:18:00",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-23 10:00:00",
+  "match": {
+    "matchId": "400021501",
+    "matchCode": "COL-COD",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group K",
+    "kickoffUtc": "2026-06-24T02:00:00Z",
+    "kickoffBjt": "2026-06-24 10:00:00",
+    "venue": "Guadalajara Stadium",
+    "city": "Guadalajara",
+    "home": {
+      "code": "COL",
+      "name": "Colombia"
+    },
+    "away": {
+      "code": "COD",
+      "name": "Congo DR"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021502",
+      "kickoffBjt": "2026-06-18 01:00:00",
+      "match": "POR 1-1 COD",
+      "venue": "Houston Stadium"
+    },
+    {
+      "matchId": "400021504",
+      "kickoffBjt": "2026-06-18 10:00:00",
+      "match": "UZB 1-3 COL",
+      "venue": "Mexico City Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "played": 1,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "POR",
+      "name": "Portugal",
+      "played": 1,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "points": 1
+    },
+    {
+      "code": "COD",
+      "name": "Congo DR",
+      "played": 1,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "points": 1
+    },
+    {
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "played": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021501",
+    "matchCode": "COL-COD",
+    "title": "哥伦比亚 vs 刚果（金）",
+    "localHtml": "哥伦比亚vs刚果金赛前24小时补发报告.html",
+    "localJson": "colombia_drcongo_prematch_snapshot.json",
+    "publicTarget": "colombia-drcongo-prematch.html",
+    "scheduledPushBjt": "2026-06-23 10:00:00",
+    "pick": "哥伦比亚 2-0 刚果（金）",
+    "confidence": "中高",
+    "probabilities": {
+      "home": 58,
+      "draw": 25,
+      "away": 17
+    },
+    "marketNormalized": {
+      "home": 56,
+      "draw": 25,
+      "away": 19
+    },
+    "xg": {
+      "home": 1.72,
+      "away": 0.81
+    },
+    "thesis": "哥伦比亚首轮 3 比 1 击败乌兹别克斯坦，刚果（金）则爆冷 1 比 1 逼平葡萄牙。盘口虽然尊重刚果（金）的首轮表现，但仍站在哥伦比亚一侧。模型认为 Nestor Lorenzo 的 4-3-3 在 James 和 Luis Diaz 的双核带动下更有持续制造机会的能力，而刚果（金）继续深守打反击能把比赛拖紧，却未必能把机会数维持到再爆一次冷门。",
+    "lineups": {
+      "home": {
+        "shape": "4-3-3",
+        "players": "Camilo Vargas; Daniel Munoz, Jhon Lucumi, Davinson Sanchez, Johan Mojica; Jefferson Lerma, Gustavo Puerta, Jhon Arias; James Rodriguez, Luis Suarez, Luis Diaz",
+        "injury": "RotoWire 与 Covers 均未列出关键伤停"
+      },
+      "away": {
+        "shape": "3-5-2",
+        "players": "Lionel Mpasi; Steve Kapuadi, Chancel Mbemba, Axel Tuanzebe; Aaron Wan-Bissaka, Edo Kayembe, Ngal'ayel Mukau, Samuel Moutoussamy, Arthur Masuaku; Cedric Bakambu, Yoane Wissa",
+        "injury": "无关键伤停"
+      }
+    },
+    "tactics": [
+      "James 在肋部的转身和直塞决定哥伦比亚能否把控球优势转化为高质量机会。",
+      "Munoz 首轮已经证明自己能从右后卫位置形成后插上终结，这是刚果（金）左翼防守最大的压力点。",
+      "Desabre 会继续让刚果（金）压成 5-3-2 / 5-4-1，靠 Wissa、Bakambu 速度打转换。",
+      "若哥伦比亚过早压上且 Lerma 保护不到位，刚果（金）两个前锋足以制造单次反击致命球。"
+    ],
+    "risks": [
+      "刚果（金）首轮已经证明可以把强队拖进低节奏泥地战，这对主让方向不利。",
+      "Guadalajara 夜间局部阵雨和海拔背景会增加体能波动，拖慢哥伦比亚的连续冲击。",
+      "James 若被 Kayembe/Moutoussamy 挤掉正面转身空间，哥伦比亚进攻会更依赖边路传中。"
+    ],
+    "scores": [
+      [
+        "2-0",
+        16
+      ],
+      [
+        "1-0",
+        14
+      ],
+      [
+        "2-1",
+        13
+      ],
+      [
+        "1-1",
+        10
+      ],
+      [
+        "3-1",
+        8
+      ],
+      [
+        "0-0",
+        6
+      ],
+      [
+        "1-2",
+        4
+      ]
+    ],
+    "weather": "Guadalajara 当地晚间预报偏多云并有局部阵雨机会，体感大致在 20C 出头；开放场地下雨并不会毁掉比赛，但会提高守转攻的偶发性。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021501"
+      ],
+      [
+        "FIFA 官方赛程 API",
+        "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023"
+      ],
+      [
+        "RotoWire 赛前预览",
+        "https://www.rotowire.com/soccer/article/colombia-vs-dr-congo-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-119191"
+      ],
+      [
+        "Covers 赔率/伤停/天气",
+        "https://www.covers.com/world-cup/colombia-vs-congo-prediction-picks-odds-tuesday-6-23-2026"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "generatedAtBjt": "2026-06-23 16:18:00",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-23 01:00:00",
+  "match": {
+    "matchId": "400021503",
+    "matchCode": "POR-UZB",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group K",
+    "kickoffUtc": "2026-06-23T17:00:00Z",
+    "kickoffBjt": "2026-06-24 01:00:00",
+    "venue": "Houston Stadium",
+    "city": "Houston",
+    "home": {
+      "code": "POR",
+      "name": "Portugal"
+    },
+    "away": {
+      "code": "UZB",
+      "name": "Uzbekistan"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021502",
+      "kickoffBjt": "2026-06-18 01:00:00",
+      "match": "POR 1-1 COD",
+      "venue": "Houston Stadium"
+    },
+    {
+      "matchId": "400021504",
+      "kickoffBjt": "2026-06-18 10:00:00",
+      "match": "UZB 1-3 COL",
+      "venue": "Mexico City Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "played": 1,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "POR",
+      "name": "Portugal",
+      "played": 1,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "points": 1
+    },
+    {
+      "code": "COD",
+      "name": "Congo DR",
+      "played": 1,
+      "gf": 1,
+      "ga": 1,
+      "gd": 0,
+      "points": 1
+    },
+    {
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "played": 1,
+      "gf": 1,
+      "ga": 3,
+      "gd": -2,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021503",
+    "matchCode": "POR-UZB",
+    "title": "葡萄牙 vs 乌兹别克斯坦",
+    "localHtml": "葡萄牙vs乌兹别克斯坦赛前24小时补发报告.html",
+    "localJson": "portugal_uzbekistan_prematch_snapshot.json",
+    "publicTarget": "portugal-uzbekistan-prematch.html",
+    "scheduledPushBjt": "2026-06-23 01:00:00",
+    "pick": "葡萄牙 2-0 乌兹别克斯坦",
+    "confidence": "中高",
+    "probabilities": {
+      "home": 74,
+      "draw": 17,
+      "away": 9
+    },
+    "marketNormalized": {
+      "home": 72,
+      "draw": 18,
+      "away": 10
+    },
+    "xg": {
+      "home": 1.94,
+      "away": 0.63
+    },
+    "thesis": "葡萄牙首轮只和刚果（金）踢成 1 比 1，市场和媒体都把这场看作回正节点。乌兹别克斯坦首轮 1 比 3 负于哥伦比亚，但低位站位和 Fayzullaev 的反击点都证明他们并非送分队。模型倾向葡萄牙通过 Fernandes 的中路出球和边锋一对一拉开局面，优势足以兑现，但若 Ronaldo 继续拖慢前场节奏，比分上限会受限。",
+    "lineups": {
+      "home": {
+        "shape": "4-2-3-1",
+        "players": "Diogo Costa; Diogo Dalot, Ruben Dias, Renato Veiga, Joao Cancelo; Joao Neves, Vitinha; Francisco Conceicao, Bruno Fernandes, Joao Felix; Cristiano Ronaldo",
+        "injury": "Ruben Dias 恢复合练后预计回归首发"
+      },
+      "away": {
+        "shape": "3-4-2-1",
+        "players": "Utkir Yusupov; Rustamjon Ashurmatov, Abdukodir Khusanov, Abdulla Abdullaev; Bekhruz Karimov, Otabek Shukurov, Akmal Mozgovoy, Sherzod Nasrullayev; Abbosbek Fayzullaev, Oston Urunov; Eldor Shomurodov",
+        "injury": "Ashurmatov 小腿问题为临场观察点"
+      }
+    },
+    "tactics": [
+      "葡萄牙最核心的对位是 Bruno Fernandes 在两线之间拿球；若 Uzbek 中场堵不住他，Ronaldo 和两翼会持续得到禁区前传送。",
+      "Martinez 大概率继续 4-2-3-1，但会比首轮更强调 Felix/Conceicao 向内收，给 Cancelo 和 Dalot 外线推进空间。",
+      "乌兹别克斯坦会用 3-4-2-1 压缩肋部，Fayzullaev 和 Urunov 负责反击第一脚，Shomurodov 负责把葡萄牙中卫拖离原位。",
+      "若葡萄牙过度把球送给静态支点，比赛会进入 Uzbek 最喜欢的低位消耗节奏。"
+    ],
+    "risks": [
+      "葡萄牙首轮只有 1 次射正的低效如果延续，2 球以上穿盘会落空。",
+      "Ashurmatov 若带伤但能坚持，Uzbek 后场高点和解围质量会显著改善。",
+      "Houston 场外闷热对替补热身和后程换人强度有影响，若节奏慢，偏向小球。"
+    ],
+    "scores": [
+      [
+        "2-0",
+        18
+      ],
+      [
+        "3-0",
+        14
+      ],
+      [
+        "2-1",
+        13
+      ],
+      [
+        "1-0",
+        12
+      ],
+      [
+        "1-1",
+        8
+      ],
+      [
+        "3-1",
+        8
+      ],
+      [
+        "0-0",
+        4
+      ]
+    ],
+    "weather": "Houston 当地 6 月 23 日白天 34C 左右、体感更高；比赛在 NRG Stadium 进行，场内气候相对可控，但热环境仍影响赛前负荷和换人节奏。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021503"
+      ],
+      [
+        "FIFA 官方赛程 API",
+        "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023"
+      ],
+      [
+        "RotoWire 赛前预览",
+        "https://www.rotowire.com/soccer/article/portugal-vs-uzbekistan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-119186"
+      ],
+      [
+        "Covers 赔率/伤停/天气",
+        "https://www.covers.com/world-cup/portugal-vs-uzbekistan-prediction-picks-odds-tuesday-6-23-2026"
+      ]
+    ]
+  }
+}

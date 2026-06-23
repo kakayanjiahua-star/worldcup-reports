@@ -1,0 +1,174 @@
+{
+  "generatedAtBjt": "2026-06-23 16:18:00",
+  "reportType": "backfill-missed-24h-window",
+  "scheduledPushBjt": "2026-06-23 04:00:00",
+  "match": {
+    "matchId": "400021506",
+    "matchCode": "ENG-GHA",
+    "competition": "FIFA World Cup™",
+    "stage": "First Stage",
+    "group": "Group L",
+    "kickoffUtc": "2026-06-23T20:00:00Z",
+    "kickoffBjt": "2026-06-24 04:00:00",
+    "venue": "Boston Stadium",
+    "city": "Boston",
+    "home": {
+      "code": "ENG",
+      "name": "England"
+    },
+    "away": {
+      "code": "GHA",
+      "name": "Ghana"
+    }
+  },
+  "recentResults": [
+    {
+      "matchId": "400021507",
+      "kickoffBjt": "2026-06-18 04:00:00",
+      "match": "ENG 4-2 CRO",
+      "venue": "Dallas Stadium"
+    },
+    {
+      "matchId": "400021510",
+      "kickoffBjt": "2026-06-18 07:00:00",
+      "match": "GHA 1-0 PAN",
+      "venue": "Toronto Stadium"
+    }
+  ],
+  "groupTable": [
+    {
+      "code": "ENG",
+      "name": "England",
+      "played": 1,
+      "gf": 4,
+      "ga": 2,
+      "gd": 2,
+      "points": 3
+    },
+    {
+      "code": "GHA",
+      "name": "Ghana",
+      "played": 1,
+      "gf": 1,
+      "ga": 0,
+      "gd": 1,
+      "points": 3
+    },
+    {
+      "code": "PAN",
+      "name": "Panama",
+      "played": 1,
+      "gf": 0,
+      "ga": 1,
+      "gd": -1,
+      "points": 0
+    },
+    {
+      "code": "CRO",
+      "name": "Croatia",
+      "played": 1,
+      "gf": 2,
+      "ga": 4,
+      "gd": -2,
+      "points": 0
+    }
+  ],
+  "forecast": {
+    "matchId": "400021506",
+    "matchCode": "ENG-GHA",
+    "title": "英格兰 vs 加纳",
+    "localHtml": "英格兰vs加纳赛前24小时补发报告.html",
+    "localJson": "england_ghana_prematch_snapshot.json",
+    "publicTarget": "england-ghana-prematch.html",
+    "scheduledPushBjt": "2026-06-23 04:00:00",
+    "pick": "英格兰 3-0 加纳",
+    "confidence": "高",
+    "probabilities": {
+      "home": 76,
+      "draw": 16,
+      "away": 8
+    },
+    "marketNormalized": {
+      "home": 74,
+      "draw": 17,
+      "away": 9
+    },
+    "xg": {
+      "home": 2.38,
+      "away": 0.72
+    },
+    "thesis": "这是 Group L 的头名争夺战。英格兰首轮 4 比 2 击败克罗地亚，进攻端制造了 20 次射门；加纳则靠补时绝杀 1 比 0 拿下巴拿马。市场把英格兰定价为极强热门，模型同意主胜方向，并且认为 Bellingham 在肋部驱动、Kane 的禁区终结和边路冲击能持续压低加纳的反击回合数。",
+    "lineups": {
+      "home": {
+        "shape": "4-2-3-1",
+        "players": "Jordan Pickford; Reece James, Ezri Konsa, John Stones, Nico O'Reilly; Declan Rice, Elliot Anderson; Noni Madueke, Jude Bellingham, Anthony Gordon; Harry Kane",
+        "injury": "Marcus Rashford 紧张腿筋后预计可用；Saka 在市场稿件里被列为疑问"
+      },
+      "away": {
+        "shape": "4-2-3-1",
+        "players": "Benjamin Asare; Marvin Senaya, Jonas Adjetey, Jerome Opoku, Gideon Mensah; Thomas Partey, Caleb Yirenkyi, Elisha Owusu; Ernest Nuamah, Jordan Ayew, Antoine Semenyo",
+        "injury": "Partey 已清出伤停表；Ati-Zigi 大概率缺席，Asare 继续把门"
+      }
+    },
+    "tactics": [
+      "Bellingham 在中线到禁区弧顶的转身推进，是英格兰最难限制的触发器；Partey 和 Yirenkyi 必须第一时间封转身。",
+      "Tuchel 大概率延续 4-2-3-1，高位边后卫会把 Ghana 压进 4-4-1-1 甚至 6 后卫防守状态。",
+      "Ghana 的得分路径主要是 Semenyo 或 Nuamah 攻击英格兰边后卫身后，抢转换第一脚。",
+      "如果英格兰先手进球，加纳被迫前压后会暴露更多回追空间。"
+    ],
+    "risks": [
+      "英格兰首轮也丢了 2 球，说明回防深度和边后卫身后并非无风险。",
+      "Foxborough 的轻雨和偏凉环境会把比赛带向更多二点争夺和定位球随机性。",
+      "若 Saka/Rashford 其中一人无法出场，英格兰替补冲击力会略降。"
+    ],
+    "scores": [
+      [
+        "3-0",
+        17
+      ],
+      [
+        "2-0",
+        15
+      ],
+      [
+        "3-1",
+        12
+      ],
+      [
+        "2-1",
+        10
+      ],
+      [
+        "1-0",
+        9
+      ],
+      [
+        "1-1",
+        6
+      ],
+      [
+        "4-1",
+        5
+      ]
+    ],
+    "weather": "Boston/Foxborough 当地 6 月 23 日偏凉并伴随阵雨，白天仅约 20C；湿滑草皮会让直塞和二点球更重要。",
+    "sources": [
+      [
+        "FIFA 官方比赛中心",
+        "https://www.fifa.com/en/match-centre/match/17/285023/289274/400021506"
+      ],
+      [
+        "FIFA 官方赛程 API",
+        "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023"
+      ],
+      [
+        "RotoWire 赛前预览",
+        "https://www.rotowire.com/soccer/article/england-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119187"
+      ],
+      [
+        "Covers 赔率/伤停/天气",
+        "https://www.covers.com/world-cup/england-vs-ghana-prediction-picks-odds-tuesday-6-23-2026"
+      ]
+    ]
+  }
+}

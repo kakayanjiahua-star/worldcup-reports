@@ -71,6 +71,54 @@
       "pushedAtBjt": "2026-06-22 22:13:25",
       "scheduledPushBjt": "2026-06-22 01:00:00",
       "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021503",
+      "match": "POR-UZB",
+      "title": "葡萄牙 vs 乌兹别克斯坦",
+      "kickoffBjt": "2026-06-24 01:00:00",
+      "reportPath": "葡萄牙vs乌兹别克斯坦赛前24小时补发报告.html",
+      "dataPath": "portugal_uzbekistan_prematch_snapshot.json",
+      "publicTarget": "portugal-uzbekistan-prematch.html",
+      "pushedAtBjt": "2026-06-23 16:18:00",
+      "scheduledPushBjt": "2026-06-23 01:00:00",
+      "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021506",
+      "match": "ENG-GHA",
+      "title": "英格兰 vs 加纳",
+      "kickoffBjt": "2026-06-24 04:00:00",
+      "reportPath": "英格兰vs加纳赛前24小时补发报告.html",
+      "dataPath": "england_ghana_prematch_snapshot.json",
+      "publicTarget": "england-ghana-prematch.html",
+      "pushedAtBjt": "2026-06-23 16:18:00",
+      "scheduledPushBjt": "2026-06-23 04:00:00",
+      "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021511",
+      "match": "PAN-CRO",
+      "title": "巴拿马 vs 克罗地亚",
+      "kickoffBjt": "2026-06-24 07:00:00",
+      "reportPath": "巴拿马vs克罗地亚赛前24小时补发报告.html",
+      "dataPath": "panama_croatia_prematch_snapshot.json",
+      "publicTarget": "panama-croatia-prematch.html",
+      "pushedAtBjt": "2026-06-23 16:18:00",
+      "scheduledPushBjt": "2026-06-23 07:00:00",
+      "mode": "backfill-missed-24h-window"
+    },
+    {
+      "matchId": "400021501",
+      "match": "COL-COD",
+      "title": "哥伦比亚 vs 刚果（金）",
+      "kickoffBjt": "2026-06-24 10:00:00",
+      "reportPath": "哥伦比亚vs刚果金赛前24小时补发报告.html",
+      "dataPath": "colombia_drcongo_prematch_snapshot.json",
+      "publicTarget": "colombia-drcongo-prematch.html",
+      "pushedAtBjt": "2026-06-23 16:18:00",
+      "scheduledPushBjt": "2026-06-23 10:00:00",
+      "mode": "backfill-missed-24h-window"
     }
   ]
 }

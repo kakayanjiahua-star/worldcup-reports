@@ -1,62 +1,10 @@
 {
-  "generatedAtUtc": "2026-06-22T14:13:28.116Z",
-  "generatedAtBjt": "2026-06-22 22:13:28",
+  "generatedAtUtc": "2026-06-23T08:19:20.432Z",
+  "generatedAtBjt": "2026-06-23 16:19:20",
   "officialScheduleSource": "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023",
   "reliableScoreSource": "https://www.livescore.com/en/football/international/world-cup-2026/fixtures/",
   "eligibleMatches": [],
   "nextMatches": [
-    {
-      "matchId": "400021494",
-      "stage": "First Stage",
-      "group": "Group J",
-      "homeCode": "ARG",
-      "awayCode": "AUT",
-      "homeName": "Argentina",
-      "awayName": "Austria",
-      "venue": "Dallas Stadium",
-      "kickoffUtc": "2026-06-22T17:00:00.000Z",
-      "kickoffBjt": "2026-06-23 01:00:00",
-      "deltaHours": 2.776
-    },
-    {
-      "matchId": "400021492",
-      "stage": "First Stage",
-      "group": "Group I",
-      "homeCode": "FRA",
-      "awayCode": "IRQ",
-      "homeName": "France",
-      "awayName": "Iraq",
-      "venue": "Philadelphia Stadium",
-      "kickoffUtc": "2026-06-22T21:00:00.000Z",
-      "kickoffBjt": "2026-06-23 05:00:00",
-      "deltaHours": 6.776
-    },
-    {
-      "matchId": "400021491",
-      "stage": "First Stage",
-      "group": "Group I",
-      "homeCode": "NOR",
-      "awayCode": "SEN",
-      "homeName": "Norway",
-      "awayName": "Senegal",
-      "venue": "New York/New Jersey Stadium",
-      "kickoffUtc": "2026-06-23T00:00:00.000Z",
-      "kickoffBjt": "2026-06-23 08:00:00",
-      "deltaHours": 9.776
-    },
-    {
-      "matchId": "400021499",
-      "stage": "First Stage",
-      "group": "Group J",
-      "homeCode": "JOR",
-      "awayCode": "ALG",
-      "homeName": "Jordan",
-      "awayName": "Algeria",
-      "venue": "San Francisco Bay Area Stadium",
-      "kickoffUtc": "2026-06-23T03:00:00.000Z",
-      "kickoffBjt": "2026-06-23 11:00:00",
-      "deltaHours": 12.776
-    },
     {
       "matchId": "400021503",
       "stage": "First Stage",
@@ -68,7 +16,7 @@
       "venue": "Houston Stadium",
       "kickoffUtc": "2026-06-23T17:00:00.000Z",
       "kickoffBjt": "2026-06-24 01:00:00",
-      "deltaHours": 26.776
+      "deltaHours": 8.678
     },
     {
       "matchId": "400021506",
@@ -81,7 +29,7 @@
       "venue": "Boston Stadium",
       "kickoffUtc": "2026-06-23T20:00:00.000Z",
       "kickoffBjt": "2026-06-24 04:00:00",
-      "deltaHours": 29.776
+      "deltaHours": 11.678
     },
     {
       "matchId": "400021511",
@@ -94,7 +42,7 @@
       "venue": "Toronto Stadium",
       "kickoffUtc": "2026-06-23T23:00:00.000Z",
       "kickoffBjt": "2026-06-24 07:00:00",
-      "deltaHours": 32.776
+      "deltaHours": 14.678
     },
     {
       "matchId": "400021501",
@@ -107,7 +55,7 @@
       "venue": "Guadalajara Stadium",
       "kickoffUtc": "2026-06-24T02:00:00.000Z",
       "kickoffBjt": "2026-06-24 10:00:00",
-      "deltaHours": 35.776
+      "deltaHours": 17.678
     },
     {
       "matchId": "400021448",
@@ -120,7 +68,7 @@
       "venue": "Seattle Stadium",
       "kickoffUtc": "2026-06-24T19:00:00.000Z",
       "kickoffBjt": "2026-06-25 03:00:00",
-      "deltaHours": 52.776
+      "deltaHours": 34.678
     },
     {
       "matchId": "400021451",
@@ -133,7 +81,7 @@
       "venue": "BC Place Vancouver",
       "kickoffUtc": "2026-06-24T19:00:00.000Z",
       "kickoffBjt": "2026-06-25 03:00:00",
-      "deltaHours": 52.776
+      "deltaHours": 34.678
     },
     {
       "matchId": "400021452",
@@ -146,7 +94,7 @@
       "venue": "Atlanta Stadium",
       "kickoffUtc": "2026-06-24T22:00:00.000Z",
       "kickoffBjt": "2026-06-25 06:00:00",
-      "deltaHours": 55.776
+      "deltaHours": 37.678
     },
     {
       "matchId": "400021455",
@@ -159,7 +107,59 @@
       "venue": "Miami Stadium",
       "kickoffUtc": "2026-06-24T22:00:00.000Z",
       "kickoffBjt": "2026-06-25 06:00:00",
-      "deltaHours": 55.776
+      "deltaHours": 37.678
+    },
+    {
+      "matchId": "400021445",
+      "stage": "First Stage",
+      "group": "Group A",
+      "homeCode": "RSA",
+      "awayCode": "KOR",
+      "homeName": "South Africa",
+      "awayName": "Korea Republic",
+      "venue": "Monterrey Stadium",
+      "kickoffUtc": "2026-06-25T01:00:00.000Z",
+      "kickoffBjt": "2026-06-25 09:00:00",
+      "deltaHours": 40.678
+    },
+    {
+      "matchId": "400021444",
+      "stage": "First Stage",
+      "group": "Group A",
+      "homeCode": "CZE",
+      "awayCode": "MEX",
+      "homeName": "Czechia",
+      "awayName": "Mexico",
+      "venue": "Mexico City Stadium",
+      "kickoffUtc": "2026-06-25T01:00:00.000Z",
+      "kickoffBjt": "2026-06-25 09:00:00",
+      "deltaHours": 40.678
+    },
+    {
+      "matchId": "400021468",
+      "stage": "First Stage",
+      "group": "Group E",
+      "homeCode": "CUW",
+      "awayCode": "CIV",
+      "homeName": "Curaçao",
+      "awayName": "Côte d'Ivoire",
+      "venue": "Philadelphia Stadium",
+      "kickoffUtc": "2026-06-25T20:00:00.000Z",
+      "kickoffBjt": "2026-06-26 04:00:00",
+      "deltaHours": 59.678
+    },
+    {
+      "matchId": "400021466",
+      "stage": "First Stage",
+      "group": "Group E",
+      "homeCode": "ECU",
+      "awayCode": "GER",
+      "homeName": "Ecuador",
+      "awayName": "Germany",
+      "venue": "New York/New Jersey Stadium",
+      "kickoffUtc": "2026-06-25T20:00:00.000Z",
+      "kickoffBjt": "2026-06-26 04:00:00",
+      "deltaHours": 59.678
     }
   ]
 }
